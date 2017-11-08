@@ -86,6 +86,7 @@
             <f7-block inner>
               <p>Duis sed erat ac eros ultrices pharetra id ut tellus. Praesent rhoncus enim ornare ipsum aliquet ultricies. Pellentesque sodales erat quis elementum sagittis.</p>
             </f7-block>
+            <black-card text="Donald Trump's first act as president was to outlaw _______."/>
             <f7-block-title>Navigation</f7-block-title>
             <f7-list>
               <f7-list-item link="/about/" title="About"></f7-list-item>
@@ -166,5 +167,10 @@
 </template>
 
 <script>
-export default {}
+import BlackCard from "./components/BlackCard.vue"
+export default {
+  components: {
+    BlackCard
+  }
+}
 </script>

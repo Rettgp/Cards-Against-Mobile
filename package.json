@@ -1,14 +1,14 @@
 {
-  "name": "framework7-vue-webpack-template",
-  "version": "1.0.1",
-  "description": "Framework7 Vue + Webpack starter app template",
+  "name": "Card-Against-Mobile",
+  "version": "0.0.1",
+  "description": "CAH Mobile Style",
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nolimits4web/Framework7-Vue-Webpack-Template.git"
+    "url": "git+https://github.com/gdphelps/Cards-Against-Mobile.git"
   },
   "keywords": [
     "ios",
@@ -21,10 +21,10 @@
     "app",
     "f7"
   ],
-  "author": "Vladimir Kharlampidi",
+  "author": "Garrett Phelps",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nolimits4web/Framework7-Vue-Webpack-Template/issues"
+    "url": "https://github.com/gdphelps/Cards-Against-Mobile/issues"
   },
   "homepage": "http://framework7.io/vue/",
   "dependencies": {
