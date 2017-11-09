@@ -30,12 +30,16 @@
             <f7-link icon-f7="card" @click="DrawBlackCard"></f7-link>
           </f7-nav-left>
           <f7-nav-center sliding>Cards Against Mobile</f7-nav-center>
+          <f7-nav-right>
+            <f7-link icon-f7="card_fill" @click="DrawWhiteCard"></f7-link>
+          </f7-nav-right>
         </f7-navbar>
         <!-- Pages -->
         <f7-pages>
           <f7-page>
             <!-- Page Content -->
             <black-card v-if="black_card_drawn" :text="black_card.text" :pick="black_card.pick"/>
+            <player-hand ref="playerHand"/>
           </f7-page>
         </f7-pages>
       </f7-view>
@@ -45,11 +49,13 @@
 
 <script>
 import BlackCard from "./components/BlackCard.vue";
+import PlayerHand from "./components/PlayerHand.vue";
 import Deck from "./Deck.js";
-var deck = new Deck();
+let deck = new Deck();
 export default {
     components: {
-        BlackCard
+        BlackCard,
+        PlayerHand
     },
 
     data: function() {
@@ -63,6 +69,10 @@ export default {
         DrawBlackCard() {
             this.black_card = deck.DrawBlackCard();
             this.black_card_drawn = true;
+        },
+        DrawWhiteCard() {
+            let white_card = deck.DrawWhiteCard();
+            this.$refs.playerHand.UpdateHand(white_card);
         }
     }
 };

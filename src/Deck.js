@@ -16,4 +16,13 @@ export default class Deck {
         console.log(Number(card_data.pick));
         return { text: card_data.text, pick: Number(card_data.pick) }
     }
+
+    DrawWhiteCard() {
+        var idx = Math.floor(Math.random() * _white_cards.length);
+        var card_data = _white_cards[idx];
+        _white_cards.splice(idx, 1);
+        console.log("White cards left: " + _white_cards.length);
+        console.log(card_data);
+        return card_data;
+    }
 }
