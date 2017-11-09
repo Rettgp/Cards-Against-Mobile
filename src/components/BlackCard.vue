@@ -2,34 +2,32 @@
 <div class="card">{{ text }}</div>
 </template>
 
+
 <script>
-module.exports = {
+export default {
     data: function() {
         return {
-            greeting: "Hello"
+            text_val: this.text,
+            pick_val: this.pick,
         };
     },
     props: {
         text: {
             type: String,
             required: true
-        }
-    },
-    methods: {
-        SetGreeting(greeting) {
-            this.greeting = greeting;
+        },
+        pick: {
+            required: true
         }
     }
 };
-</script>
+</script>:
 
 <style scoped>
 div {
+    height: 2em;
     width: 50%;
-    padding-bottom: 50%;
-    font-size: 1.5em;
-    font-weight: bold;
-    font-family: "Helvetica Neue", "Helvetica"; 
+    padding-bottom: 75%;
     color: white;
     background-color: black;
 }
