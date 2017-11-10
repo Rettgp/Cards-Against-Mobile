@@ -35,8 +35,8 @@ div {
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    top: 6.25em;
-    margin-right: -5em;
+    top: 4.25em;
+    /* margin-right: -5em; */
 }
 
 </style>

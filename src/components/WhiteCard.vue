@@ -21,9 +21,10 @@ export default {
 
 <style scoped>
 div {
-    height: 2em;
-    width: 50%;
-    padding-bottom: 75%;
+    width: 7em;
+    /* width: 50%; */
+    height: 10em;
+    /* padding-bottom: 75%; */
     color: black;
     background-color: white;
     display: inline-block;
