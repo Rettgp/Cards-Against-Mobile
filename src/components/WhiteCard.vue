@@ -1,5 +1,5 @@
 <template>
-<div class="card">{{ text }}</div>
+<div draggable="true" class="card"><span v-html="text"></span></div>
 </template>
 
 
@@ -26,5 +26,8 @@ div {
     padding-bottom: 75%;
     color: black;
     background-color: white;
+    display: inline-block;
+    overflow-x: hidden;
 }
+
 </style>

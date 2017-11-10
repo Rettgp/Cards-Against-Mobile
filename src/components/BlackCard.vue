@@ -1,5 +1,5 @@
 <template>
-<div class="card">{{ text }}</div>
+<div class="card"><span v-html="text"></span></div>
 </template>
 
 

@@ -38,8 +38,12 @@
         <f7-pages>
           <f7-page>
             <!-- Page Content -->
-            <black-card v-if="black_card_drawn" :text="black_card.text" :pick="black_card.pick"/>
-            <player-hand ref="playerHand"/>
+            <f7-page-content>
+              <black-card v-if="black_card_drawn" :text="black_card.text" :pick="black_card.pick"/>
+            </f7-page-content>
+            <f7-toolbar style="height: 100px;" bottom>
+              <player-hand ref="playerHand"/>
+            </f7-toolbar>
           </f7-page>
         </f7-pages>
       </f7-view>

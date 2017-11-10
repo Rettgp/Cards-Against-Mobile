@@ -31,4 +31,12 @@ export default {
 </script>:
 
 <style scoped>
+div {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    top: 6.25em;
+    margin-right: -5em;
+}
+
 </style>
