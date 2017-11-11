@@ -40,6 +40,7 @@
             <!-- Page Content -->
             <f7-page-content>
               <black-card v-if="black_card_drawn" :text="black_card.text" :pick="black_card.pick"/>
+              <played-cards ref="whiteCardsPlayed"/>
             </f7-page-content>
             <f7-toolbar style="height: 100px;" bottom>
               <player-hand ref="playerHand"/>
@@ -54,6 +55,7 @@
 <script>
 import BlackCard from "./components/BlackCard.vue";
 import PlayerHand from "./components/PlayerHand.vue";
+import PlayedCards from "./components/PlayedCards.vue";
 import draggable from 'vuedraggable'
 import Deck from "./Deck.js";
 let deck = new Deck();
@@ -61,6 +63,7 @@ export default {
     components: {
         BlackCard,
         PlayerHand,
+        PlayedCards,
         draggable
     },
 
@@ -79,6 +82,7 @@ export default {
         DrawWhiteCard() {
             let white_card = deck.DrawWhiteCard();
             this.$refs.playerHand.UpdateHand(white_card);
+            this.$refs.whiteCardsPlayed.UpdatePlayed("Garrett", white_card);
         }
     }
 };

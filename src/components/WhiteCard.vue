@@ -1,5 +1,5 @@
 <template>
-<div class="card"><span v-html="text"></span></div>
+<div class="cah-card"><span v-html="text"></span></div>
 </template>
 
 
@@ -37,6 +37,7 @@ div {
 
 span {
     white-space: pre-wrap;
+    font-size: 0.95em;
 }
 
 </style>

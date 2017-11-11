@@ -1,5 +1,5 @@
 <template>
-<div class="card"><span v-html="text"></span></div>
+<div class="cah-card"><span v-html="text"></span></div>
 </template>
 
 
@@ -25,10 +25,11 @@ export default {
 
 <style scoped>
 div {
-    height: 2em;
-    width: 50%;
-    padding-bottom: 75%;
+    height: 50%;
+    width: 9em;
     color: white;
     background-color: black;
+    display: inline-block;
+    vertical-align: top;
 }
 </style>

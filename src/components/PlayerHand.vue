@@ -33,18 +33,20 @@ export default {
 </script>:
 
 <style scoped>
+div {
+    z-index: 100;
+}
 
 :not(.selected) {
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
-    top: 4.75em;
+    margin-top: 5.6em;
 }
 
 .selected {
     white-space: nowrap;
-    z-index: 200;
-    margin-bottom: 10em;
+    margin-bottom: 14em;
 }
 
 div:nth-child(n+2) {
