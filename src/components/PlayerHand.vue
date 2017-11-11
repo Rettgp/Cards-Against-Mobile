@@ -1,6 +1,7 @@
 <template>
 <div>
-<WhiteCard
+<WhiteCard v-bind:class="{ selected: card.isSelected }" 
+    @click.native="card.isSelected = !card.isSelected"
     v-for="card in hand"
     :key="card.id"
     :text="card.text"
@@ -24,18 +25,26 @@ export default {
     },
     methods: {
         UpdateHand(white_card) {
-            this.hand.push({ id: ++cardId, text: white_card });
-        }
+            this.hand.push({ id: ++cardId, text: white_card, isSelected: false });
+        },
     }
 };
+
 </script>:
 
 <style scoped>
-div {
+
+:not(.selected) {
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
-    top: 4.25em;
+    top: 4.75em;
+}
+
+.selected {
+    white-space: nowrap;
+    z-index: 200;
+    margin-bottom: 10em;
 }
 
 div:nth-child(n+2) {

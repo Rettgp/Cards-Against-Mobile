@@ -22,18 +22,21 @@ export default {
         draggable
     }
 };
-</script>:
+
+</script>
 
 <style scoped>
 div {
     width: 7em;
-    /* width: 50%; */
-    height: 10em;
-    /* padding-bottom: 75%; */
+    height: 11em;
     color: black;
     background-color: white;
     display: inline-block;
     overflow-x: hidden;
+}
+
+span {
+    white-space: pre-wrap;
 }
 
 </style>
