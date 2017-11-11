@@ -1,9 +1,11 @@
 <template>
-<div draggable="true" class="card"><span v-html="text"></span></div>
+<div class="card"><span v-html="text"></span></div>
 </template>
 
 
 <script>
+import draggable from 'vuedraggable'
+
 export default {
     data: function() {
         return {
@@ -15,6 +17,9 @@ export default {
             type: String,
             required: true
         },
+    },
+    components: {
+        draggable
     }
 };
 </script>:

@@ -36,7 +36,10 @@ div {
     overflow-x: auto;
     overflow-y: hidden;
     top: 4.25em;
-    /* margin-right: -5em; */
+}
+
+div:nth-child(n+2) {
+    margin-left: -5em;
 }
 
 </style>

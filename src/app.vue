@@ -54,12 +54,14 @@
 <script>
 import BlackCard from "./components/BlackCard.vue";
 import PlayerHand from "./components/PlayerHand.vue";
+import draggable from 'vuedraggable'
 import Deck from "./Deck.js";
 let deck = new Deck();
 export default {
     components: {
         BlackCard,
-        PlayerHand
+        PlayerHand,
+        draggable
     },
 
     data: function() {
@@ -80,4 +82,5 @@ export default {
         }
     }
 };
+
 </script>
