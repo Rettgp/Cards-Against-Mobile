@@ -27,6 +27,27 @@ export default {
         UpdateHand(white_card) {
             this.hand.push({ id: ++cardId, text: white_card, isSelected: false });
         },
+        GetSelected() {
+            for (var index = 0; index < this.hand.length; index++) {
+                let card = this.hand[index];
+                if ( card.isSelected == true )
+                {
+                    return card.text;
+                }
+            }
+
+            return "";
+        },
+        RemoveCard(played_card) {
+            for (var index = 0; index < this.hand.length; index++) {
+                let card = this.hand[index];
+                if ( card.isSelected == true && card.text == played_card )
+                {
+                    card.isSelected = false;
+                    this.hand.splice( index, 1 );
+                }
+            };
+        }
     }
 };
 
@@ -41,7 +62,7 @@ div {
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
-    margin-top: 5.6em;
+    margin-top: 6em;
 }
 
 .selected {

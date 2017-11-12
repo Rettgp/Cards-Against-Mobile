@@ -27,11 +27,13 @@
         <!-- iOS Theme Navbar -->
         <f7-navbar v-if="$theme.ios">
           <f7-nav-left>
-            <f7-link icon-f7="card" @click="DrawBlackCard"></f7-link>
+            <f7-link icon-f7="card" @click="DrawWhiteCard"></f7-link>
+            <f7-link icon-f7="share" @click="PlayWhiteCard"></f7-link>
           </f7-nav-left>
-          <f7-nav-center sliding>Cards Against Mobile</f7-nav-center>
+          <f7-nav-center sliding>CAH Mobile</f7-nav-center>
           <f7-nav-right>
-            <f7-link icon-f7="card_fill" @click="DrawWhiteCard"></f7-link>
+            <f7-link icon-f7="trash" @click="ClearPlayed"></f7-link>
+            <f7-link icon-f7="card_fill" @click="DrawBlackCard"></f7-link>
           </f7-nav-right>
         </f7-navbar>
         <!-- Pages -->
@@ -39,8 +41,8 @@
           <f7-page>
             <!-- Page Content -->
             <f7-page-content>
-              <black-card v-if="black_card_drawn" :text="black_card.text" :pick="black_card.pick"/>
-              <played-cards ref="whiteCardsPlayed"/>
+              <black-card :text="black_card.text" :pick="black_card.pick"/>
+              <played-cards db="db" ref="whiteCardsPlayed"/>
             </f7-page-content>
             <f7-toolbar style="height: 100px;" bottom>
               <player-hand ref="playerHand"/>
@@ -53,11 +55,14 @@
 </template>
 
 <script>
+import firebase from "firebase"
 import BlackCard from "./components/BlackCard.vue";
 import PlayerHand from "./components/PlayerHand.vue";
 import PlayedCards from "./components/PlayedCards.vue";
 import draggable from 'vuedraggable'
 import Deck from "./Deck.js";
+import {DB} from "./Firebase.js";
+
 let deck = new Deck();
 export default {
     components: {
@@ -82,7 +87,20 @@ export default {
         DrawWhiteCard() {
             let white_card = deck.DrawWhiteCard();
             this.$refs.playerHand.UpdateHand(white_card);
-            this.$refs.whiteCardsPlayed.UpdatePlayed("Garrett", white_card);
+        },
+        PlayWhiteCard() {
+            let card = this.$refs.playerHand.GetSelected();
+            if ( card == "" )
+            {
+              return;
+            }
+            let foo = Math.floor(Math.random() * 5);
+            // DB.ref("played-cards").push({player: foo.toString(), text: card});
+            this.$refs.whiteCardsPlayed.UpdatePlayed(foo.toString(), card);
+            this.$refs.playerHand.RemoveCard(card);
+        },
+        ClearPlayed() {
+          this.$refs.whiteCardsPlayed.Clear();
         }
     }
 };

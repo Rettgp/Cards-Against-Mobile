@@ -25,8 +25,13 @@ import Routes from './routes.js'
 // Import App Component
 import App from './app'
 
+import VueFire from "vuefire"
+
+
+
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue)
+Vue.use(VueFire)
 
 // Init App
 new Vue({

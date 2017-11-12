@@ -1,12 +1,12 @@
 <template>
 <div class="players-container">
-    <div class="played-container" v-for="player in players" :key="player.id">
-        <WhiteCard v-bind:class="{ revealed: card.revealed }" 
-            @click.native="card.revealed = !card.revealed"
-            v-for="card in player.cards"
-            :key="card.id"
-            :text="RevealedText(card)"
-        />
+    <div class="player-container" v-for="player in players" :key="player.id">
+        <div class="card-container" v-for="card in player.cards" :key="card.id">
+            <WhiteCard v-bind:class="{ revealed: card.revealed }" 
+                @click.native="card.revealed = !card.revealed"
+                :text="RevealedText(card)"
+            />
+        </div>
     </div>
 </div>
 </template>
@@ -16,6 +16,7 @@
 let cardId = 1;
 let playerId = 1;
 
+import {DB} from "../Firebase.js";
 import WhiteCard from "./WhiteCard.vue";
 export default {
     components: {
@@ -27,29 +28,47 @@ export default {
             hiddenText: ""
         };
     },
+    firebase: {
+        players: {
+            source: DB.ref("cards_played")
+        }
+    },
     methods: {
         UpdatePlayed(player, white_card) {
-            if (typeof this.players[player] == "undefined") {
-                this.players.push({
+            let player_idx = -1;
+            let db_key = -1;
+            for (let i = 0; i < this.players.length; i++) {
+                let element = this.players[i];
+                if ( element.name == player ) {
+                    db_key = element[".key"];
+                    player_idx = i;
+                    break;
+                }
+            } 
+
+            if (player_idx < 0 ) {
+                let obj_val = {
                     id: ++playerId,
+                    name: player,
                     cards: [{ id: ++cardId, text: white_card, revealed: false }]
-                });
+                }
+                this.$firebaseRefs.players.push(obj_val).getKey();
             } else {
-                this.players[player].id = ++playerId;
-                this.players[player].cards.push({ 
+                let cards_obj = { 
                     id: ++cardId, 
                     text: white_card, 
                     revealed: false 
-                });
-                this.players[player].cards.push({ 
-                    id: ++cardId, 
-                    text: white_card, 
-                    revealed: false 
-                });
+                }
+
+                console.log(this.$firebaseRefs.players.child(db_key));
+                this.$firebaseRefs.players.child(db_key).child('cards').push(cards_obj);
             }
         },
         RevealedText: function(card) {
             return card.revealed ? card.text : this.hiddenText;
+        },
+        Clear() {
+            this.$firebaseRefs.players.remove();
         }
     }
 };
@@ -62,18 +81,28 @@ export default {
     vertical-align: top;
 }
 
+.card-container {
+    vertical-align: top;
+    display: inline-block;
+    direction: left;
+}
+
 :not(.revealed) {
     background-image: url("../assets/CAH-Card-Logo.svg");
     background-repeat: no-repeat;
     height: 2em; 
     width: 1em;
-    padding-bottom: 1em;
+    margin-bottom: 2em;
+    margin-right: 1.5em;
+    white-space: nowrap;
 }
 
 .revealed {
-    height: 11em;
+    /* height: 11em;
     width: 7em;
-    font-size: 1em;
+    font-size: 1em; */
+    /* margin-right: -7em;
+    margin-top: -10em; */
     transform: translateX(-9.5em);
 }
 
