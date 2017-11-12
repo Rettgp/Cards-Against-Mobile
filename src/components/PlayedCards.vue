@@ -28,9 +28,20 @@ export default {
             hiddenText: ""
         };
     },
+    props: {
+        game: {
+            type: String,
+            required: true
+        }
+    },
+    watch: {
+        game: function (newVal) {
+            this.$bindAsArray('players', DB.ref(this.game + "/cards_played"))
+        }
+    },
     firebase: {
         players: {
-            source: DB.ref("cards_played")
+            source: DB.ref(this.game + "/cards_played")
         }
     },
     methods: {

@@ -11,9 +11,6 @@ export default class Deck {
         var idx = Math.floor(Math.random() * _black_cards.length);
         var card_data = _black_cards[idx];
         _black_cards.splice(idx, 1);
-        console.log("Black cards left: " + _black_cards.length);
-        console.log(card_data.text);
-        console.log(Number(card_data.pick));
         return { text: card_data.text, pick: Number(card_data.pick) }
     }
 
@@ -21,8 +18,6 @@ export default class Deck {
         var idx = Math.floor(Math.random() * _white_cards.length);
         var card_data = _white_cards[idx];
         _white_cards.splice(idx, 1);
-        console.log("White cards left: " + _white_cards.length);
-        console.log(card_data);
         return card_data;
     }
 }

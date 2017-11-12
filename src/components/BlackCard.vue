@@ -14,6 +14,10 @@ export default {
         };
     },
     props: {
+        game: {
+            type: String,
+            required: true
+        },
         text: {
             type: String,
             required: true
@@ -23,6 +27,9 @@ export default {
         }
     },
     watch: {
+        game: function (newVal) {
+            this.$bindAsObject('blackCard', DB.ref(this.game + "/black_card"))
+        },
         text: function(newVal, oldVal) {
             this.$firebaseRefs.blackCard.update({ text: this.text, pick: this.pick });
         },
@@ -32,7 +39,7 @@ export default {
     },
     firebase: {
         blackCard: {
-            source: DB.ref("black_card"),
+            source: DB.ref(this.game + "/black_card"),
             asObject: true
         }
     },
