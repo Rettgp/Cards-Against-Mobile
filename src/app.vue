@@ -8,13 +8,12 @@
     <!-- Left Panel -->
     <f7-panel left reveal layout="dark">
       <f7-view id="left-panel-view" navbar-through :dynamic-navbar="true">
-        <f7-navbar v-if="$theme.ios" title="Settings" sliding></f7-navbar>
+        <f7-navbar v-if="$theme.ios" title="Scores" sliding></f7-navbar>
         <f7-pages>
           <f7-page>
             <f7-navbar v-if="$theme.material" title="Left Panel" sliding></f7-navbar>
-            <f7-block-title>Black Card Deck</f7-block-title>
             <f7-list>
-              <f7-button @click="DrawBlackCard">Draw</f7-button>
+              <scoreboard :game="game_id"/>
             </f7-list>
           </f7-page>
         </f7-pages>
@@ -56,7 +55,7 @@
             <f7-link icon-f7="card" @click="DrawWhiteCard"></f7-link>
             <f7-link icon-f7="share" @click="PlayWhiteCard"></f7-link>
           </f7-nav-left>
-          <f7-nav-center sliding>{{ game_id }}</f7-nav-center>
+          <f7-nav-center sliding><f7-link open-panel="left">{{ game_id }}</f7-link></f7-nav-center>
           <f7-nav-right>
             <f7-link icon-f7="trash" @click="ClearPlayed"></f7-link>
             <f7-link icon-f7="card_fill" @click="DrawBlackCard"></f7-link>
@@ -85,6 +84,7 @@
 import BlackCard from "./components/BlackCard.vue";
 import PlayerHand from "./components/PlayerHand.vue";
 import PlayedCards from "./components/PlayedCards.vue";
+import Scoreboard from "./components/Scoreboard.vue";
 import draggable from "vuedraggable";
 import Deck from "./Deck.js";
 import { DB } from "./Firebase.js";
@@ -95,6 +95,7 @@ export default {
         BlackCard,
         PlayerHand,
         PlayedCards,
+        Scoreboard,
         draggable
     },
 
@@ -143,10 +144,9 @@ export default {
                         
           if (this.name != "") {
             this.game_id = this.game_id == "" ? new_game_id : this.game_id;
-            // if (this.game_id == "") {
-              // DB.ref("/"+new_game_id).set({ black_card: "" });
-            // }
+            DB.ref(this.game_id + "/players/" + this.name).set({ score: 0 });
             this.$f7.closeModal(".login-screen", true);
+            this.$f7.openPanel("left", true);
           }
         }
     }
