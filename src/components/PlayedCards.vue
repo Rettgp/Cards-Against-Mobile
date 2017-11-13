@@ -109,11 +109,6 @@ export default {
 }
 
 .revealed {
-    /* height: 11em;
-    width: 7em;
-    font-size: 1em; */
-    /* margin-right: -7em;
-    margin-top: -10em; */
     transform: translateX(-9.5em);
 }
 

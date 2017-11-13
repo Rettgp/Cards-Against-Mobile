@@ -24,7 +24,7 @@
       <f7-view>
         <f7-pages>
           <f7-page login-screen>
-            <f7-login-screen-title>CAH Mobile</f7-login-screen-title>
+            <f7-login-screen-title>Cards Against Mobile</f7-login-screen-title>
             <f7-list form>
               <f7-list-item>
                 <f7-label>Name</f7-label>
@@ -65,13 +65,15 @@
         <!-- Pages -->
         <f7-pages>
           <f7-page>
-            <f7-page-content>
+            <f7-page-content style="overflow: hidden;">
               <black-card :game="game_id" :text="black_card.text" :pick="black_card.pick"/>
               <played-cards :game="game_id" ref="whiteCardsPlayed"/>
             </f7-page-content>
             <f7-toolbar style="height: 100px;" bottom>
               <player-hand ref="playerHand"/>
             </f7-toolbar>
+            <!-- <f7-toolbar style="height: 50px;" bottom> -->
+            <!-- </f7-toolbar> -->
           </f7-page>
 
         </f7-pages>
@@ -146,7 +148,6 @@ export default {
             this.game_id = this.game_id == "" ? new_game_id : this.game_id;
             DB.ref(this.game_id + "/players/" + this.name).set({ score: 0 });
             this.$f7.closeModal(".login-screen", true);
-            this.$f7.openPanel("left", true);
           }
         }
     }

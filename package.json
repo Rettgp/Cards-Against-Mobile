@@ -26,13 +26,16 @@
   "bugs": {
     "url": "https://github.com/gdphelps/Cards-Against-Mobile/issues"
   },
-  "homepage": "http://framework7.io/vue/",
+  "homepage": "http://cah-mobile.firebaseapp.com/",
   "dependencies": {
     "dragula": "^3.7.2",
+    "favicons-webpack-plugin": "0.0.7",
     "firebase": "^4.6.2",
     "framework7": "^1.6.4",
+    "framework7-icons": "^0.8.9",
     "framework7-vue": "^0.9.2",
     "jquery": "3.2.1",
+    "resolve-url-loader": "^2.2.0",
     "vue": "^2.2.4",
     "vuefire": "^1.4.4"
   },

@@ -8,6 +8,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+var FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 var env = config.build.env
 
@@ -28,6 +29,11 @@ var webpackConfig = merge(baseWebpackConfig, {
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
       'process.env': env
+    }),
+    new FaviconsWebpackPlugin({
+      title: "CAM",
+      logo: "./static/CAM-Icon.svg",
+      background: '#000',
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {

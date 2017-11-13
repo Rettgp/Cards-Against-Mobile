@@ -1,11 +1,11 @@
 <template>
-<div>
-<WhiteCard v-bind:class="{ selected: card.isSelected }" 
-    @click.native="card.isSelected = !card.isSelected"
-    v-for="card in hand"
-    :key="card.id"
-    :text="card.text"
-/>
+<div class="hand">
+    <WhiteCard v-bind:class="{ selected: card.isSelected }" 
+        @click.native="card.isSelected = !card.isSelected"
+        v-for="card in hand"
+        :key="card.id"
+        :text="card.text"
+    />
 </div>
 </template>
 
@@ -54,7 +54,7 @@ export default {
 </script>:
 
 <style scoped>
-div {
+.hand {
     z-index: 100;
 }
 
@@ -67,6 +67,7 @@ div {
 
 .selected {
     white-space: nowrap;
+    /* transform: translateY(-9.5em); */
     margin-bottom: 14em;
 }
 

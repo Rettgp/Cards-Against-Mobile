@@ -13,7 +13,7 @@ exports.cssLoaders = function (options) {
   options = options || {}
 
   var cssLoader = {
-    loader: 'css-loader',
+    loader: "css-loader",
     options: {
       minimize: process.env.NODE_ENV === 'production',
       sourceMap: options.sourceMap
@@ -37,6 +37,7 @@ exports.cssLoaders = function (options) {
     if (options.extract) {
       return ExtractTextPlugin.extract({
         use: loaders,
+        publicPath: "../../",
         fallback: 'vue-style-loader'
       })
     } else {

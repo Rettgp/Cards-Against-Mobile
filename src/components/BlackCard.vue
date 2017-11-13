@@ -48,11 +48,11 @@ export default {
 
 <style scoped>
 div {
-    height: 50%;
+    height: 70%;
     width: 9em;
     color: white;
     background-color: black;
-    display: inline-block;
+    float: left;
     vertical-align: top;
 }
 </style>
