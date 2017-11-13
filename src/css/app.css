@@ -10,3 +10,7 @@ Your custom styles go here
     border-radius: 15px;
     padding: 1em;
 }
+
+.toolbar-inner {
+    padding: 0;
+}

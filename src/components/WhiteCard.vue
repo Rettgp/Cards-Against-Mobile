@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped>
-div {
+.cah-card {
     width: 7em;
     height: 11em;
     color: black;

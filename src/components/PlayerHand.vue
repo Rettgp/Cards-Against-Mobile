@@ -1,11 +1,9 @@
 <template>
-<div class="hand">
-    <WhiteCard v-bind:class="{ selected: card.isSelected }" 
-        @click.native="card.isSelected = !card.isSelected"
-        v-for="card in hand"
-        :key="card.id"
-        :text="card.text"
-    />
+<div class="hand" v-bind:style="{ 'overflow-x': overflowX, 'overflow-y': overflowY }">
+    <WhiteCard v-for="card in hand" :key="card.id"
+        v-bind:class="{ selected: card.isSelected }" 
+        @click.native="(event) => { CardSelected(event, card); }" 
+        :text="card.text"/>
 </div>
 </template>
 
@@ -20,7 +18,9 @@ export default {
     },
     data: function() {
         return {
-            hand: []
+            hand: [],
+            overflowX: "scroll",
+            overflowY: "hidden",
         };
     },
     methods: {
@@ -47,6 +47,16 @@ export default {
                     this.hand.splice( index, 1 );
                 }
             };
+        },
+        CardSelected(event, card) {
+            card.isSelected = !card.isSelected;
+            // if ( card.isSelected ) {
+            //     this.overflowX = "visible";
+            //     this.overflowY = "visible";
+            // } else {
+            //     this.overflowX = "scroll";
+            //     this.overflowY = "hidden";
+            // }
         }
     }
 };
@@ -55,24 +65,23 @@ export default {
 
 <style scoped>
 .hand {
-    z-index: 100;
-}
-
-:not(.selected) {
+    height: 20%;
+    width: 100%;
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
-    margin-top: 6em;
+    left: 0;
+    bottom: 0;
+    position: absolute;
 }
 
 .selected {
-    white-space: nowrap;
-    /* transform: translateY(-9.5em); */
-    margin-bottom: 14em;
+    z-index: 200;
+    transform: translateY(-90%);
 }
 
-div:nth-child(n+2) {
-    margin-left: -5em;
+.cah-card {
+    margin-right: -5em;
 }
 
 </style>

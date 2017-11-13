@@ -37,6 +37,7 @@
     "jquery": "3.2.1",
     "resolve-url-loader": "^2.2.0",
     "vue": "^2.2.4",
+    "vuedraggable": "^2.15.0",
     "vuefire": "^1.4.4"
   },
   "devDependencies": {

@@ -68,10 +68,10 @@
             <f7-page-content style="overflow: hidden;">
               <black-card :game="game_id" :text="black_card.text" :pick="black_card.pick"/>
               <played-cards :game="game_id" ref="whiteCardsPlayed"/>
-            </f7-page-content>
-            <f7-toolbar style="height: 100px;" bottom>
               <player-hand ref="playerHand"/>
-            </f7-toolbar>
+            </f7-page-content>
+            <!-- <f7-toolbar style="height: 100px;" bottom> -->
+            <!-- </f7-toolbar> -->
             <!-- <f7-toolbar style="height: 50px;" bottom> -->
             <!-- </f7-toolbar> -->
           </f7-page>
