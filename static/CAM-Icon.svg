@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    sodipodi:docname="CAM-Icon.svg"
-   inkscape:version="0.92.1 r15371">
+   inkscape:version="0.92.1 r15371"
+   inkscape:export-filename="D:\Dev\Projects\Cards Against Humanity Mobile\static\CAM-Logo.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="1214.0267"
-     inkscape:cy="282.6159"
+     inkscape:zoom="0.7"
+     inkscape:cx="241.60345"
+     inkscape:cy="263.93634"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -56,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -112,7 +115,7 @@
        id="rect4556"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.067;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:2.28231037;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 84.434677,-232.09552 79.401373,-23.8039 42.44401,129.26316 -79.40134,23.80389 z"
        id="rect4556-8"
        inkscape:connector-curvature="0" />
@@ -137,7 +140,7 @@
          id="tspan4567"
          x="191.47047"
          y="-207.69699"
-         style="stroke-width:0.26458332px"></tspan></text>
+         style="stroke-width:0.26458332px" /></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
@@ -164,18 +167,18 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6551609px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44137901px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="143.19855"
-       y="-233.25679"
+       x="136.67061"
+       y="-238.07896"
        id="text4581"
-       transform="rotate(7.7739785)"><tspan
+       transform="rotate(9.3904065)"><tspan
          sodipodi:role="line"
          id="tspan4579"
-         x="143.19855"
-         y="-233.25679"
+         x="136.67061"
+         y="-238.07896"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6551609px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.44137901px">Against</tspan><tspan
          sodipodi:role="line"
-         x="143.19855"
-         y="-211.18784"
+         x="136.67061"
+         y="-216.01001"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6551609px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.44137901px"
          id="tspan4583">Mobile</tspan></text>
   </g>

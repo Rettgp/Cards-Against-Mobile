@@ -24,7 +24,7 @@
       <f7-view>
         <f7-pages>
           <f7-page login-screen>
-            <f7-login-screen-title>Cards Against Mobile</f7-login-screen-title>
+            <f7-login-screen-title><img style="height:100%; width: 80%;" src="./assets/login-banner.png"></img></f7-login-screen-title>
             <f7-list form>
               <f7-list-item>
                 <f7-label>Name</f7-label>
@@ -65,15 +65,11 @@
         <!-- Pages -->
         <f7-pages>
           <f7-page>
-            <f7-page-content style="overflow: hidden;">
+            <f7-page-content style="overflow: visible;">
               <black-card :game="game_id" :text="black_card.text" :pick="black_card.pick"/>
               <played-cards :game="game_id" ref="whiteCardsPlayed"/>
               <player-hand ref="playerHand"/>
             </f7-page-content>
-            <!-- <f7-toolbar style="height: 100px;" bottom> -->
-            <!-- </f7-toolbar> -->
-            <!-- <f7-toolbar style="height: 50px;" bottom> -->
-            <!-- </f7-toolbar> -->
           </f7-page>
 
         </f7-pages>

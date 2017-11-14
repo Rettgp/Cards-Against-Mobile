@@ -30,11 +30,6 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': env
     }),
-    new FaviconsWebpackPlugin({
-      title: "CAM",
-      logo: "./static/CAM-Icon.svg",
-      background: '#000',
-    }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false

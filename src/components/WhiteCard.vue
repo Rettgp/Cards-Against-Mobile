@@ -31,7 +31,7 @@ export default {
     height: 11em;
     color: black;
     background-color: white;
-    display: inline-block;
+    display: inline-flex;
     overflow-x: hidden;
 }
 
