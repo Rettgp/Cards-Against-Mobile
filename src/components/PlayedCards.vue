@@ -1,9 +1,9 @@
 <template>
 <div class="players-container">
     <div class="player-container" v-for="player in players" :key="player.id">
-        <div class="card-container" v-for="card in player.played" :key="card.id">
+        <div class="card-container" v-for="(card, card_key) in player.played" :key="card.id">
             <WhiteCard v-bind:class="{ revealed: card.revealed }" 
-                @click.native="card.revealed = !card.revealed"
+                @click.native="Reveal( player, card, card_key, $event )"
                 :text="RevealedText(card)"
             />
         </div>
@@ -39,6 +39,11 @@ export default {
             this.$bindAsArray('players', DB.ref(this.game + "/players"))
         }
     },
+    firebase: {
+        players: {
+            source: DB.ref(this.game + "/players")
+        }
+    },
     methods: {
         UpdatePlayed(player, white_card) {
             let cards_obj = { 
@@ -50,6 +55,9 @@ export default {
         },
         RevealedText: function(card) {
             return card.revealed ? card.text : this.hiddenText;
+        },
+        Reveal(player, card, card_key, event) {
+            this.$firebaseRefs.players.child(player[".key"]).child("played").child(card_key).child("revealed").set(!card.revealed);
         },
         Clear() {
             for (let i = 0; i < this.players.length; i++) {
