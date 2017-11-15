@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 div {
-    height: 60%;
+    height: 45%;
     width: 55%;
     color: white;
     background-color: black;

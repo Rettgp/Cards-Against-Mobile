@@ -1,6 +1,6 @@
 <template>
 <div class="hand">
-    <WhiteCard v-for="card in hand" :key="card.id"
+    <WhiteCard style="margin-top: 1em; height: 65%; width: 45%;" v-for="card in hand" :key="card.id"
         v-bind:class="{ selected: card.isSelected }" 
         @click.native="card.isSelected = !card.isSelected" 
         :text="card.text"/>
@@ -53,7 +53,7 @@ export default {
 
 <style scoped>
 .hand {
-    height: 20%;
+    height: 35%;
     width: 100%;
     white-space: nowrap;
     overflow-x: scroll;
@@ -64,14 +64,13 @@ export default {
 }
 
 .hand .selected {
-    position: fixed;
-    left: 0;
     z-index: 200;
-    transform: translateY(-100%);
+    border: 1px solid #007aff;
+    transform: translateY(-10%);
 }
 
 .cah-card {
-    margin-right: -5em;
+    font-size: 1.25em;
 }
 
 </style>

@@ -66,7 +66,7 @@
         <f7-pages>
           <f7-page>
             <f7-page-content style="overflow: visible;">
-              <black-card :game="game_id" :text="black_card.text" :pick="black_card.pick"/>
+              <black-card @click.native="DrawBlackCard" :game="game_id" :text="black_card.text" :pick="black_card.pick"/>
               <played-cards :game="game_id" ref="whiteCardsPlayed"/>
               <player-hand ref="playerHand"/>
             </f7-page-content>

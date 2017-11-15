@@ -1,7 +1,7 @@
 <template>
 <div class="players-container">
-    <div class="player-container" v-for="player in players" :key="player.id">
-        <div class="card-container" v-for="(card, card_key) in player.played" :key="card.id">
+    <div class="player-container" v-for="player in played" :key="player.id">
+        <div class="card-container" v-for="(card, card_key) in player.cards" :key="card.id">
             <WhiteCard v-bind:class="{ revealed: card.revealed }" 
                 @click.native="Reveal( player, card, card_key, $event )"
                 :text="RevealedText(card)"
@@ -24,7 +24,7 @@ export default {
     },
     data: function() {
         return {
-            players: [],
+            played: [],
             hiddenText: ""
         };
     },
@@ -36,12 +36,12 @@ export default {
     },
     watch: {
         game: function (newVal) {
-            this.$bindAsArray('players', DB.ref(this.game + "/players"))
+            this.$bindAsArray('played', DB.ref(this.game + "/played"))
         }
     },
     firebase: {
-        players: {
-            source: DB.ref(this.game + "/players")
+        played: {
+            source: DB.ref(this.game + "/played")
         }
     },
     methods: {
@@ -51,19 +51,17 @@ export default {
                 text: white_card, 
                 revealed: false 
             }
-            this.$firebaseRefs.players.child(player).child('played').push(cards_obj);
+            this.$firebaseRefs.played.child(player).child("cards").push(cards_obj);
         },
         RevealedText: function(card) {
             return card.revealed ? card.text : this.hiddenText;
         },
         Reveal(player, card, card_key, event) {
-            this.$firebaseRefs.players.child(player[".key"]).child("played").child(card_key).child("revealed").set(!card.revealed);
+            console.log(player);
+            this.$firebaseRefs.played.child(player[".key"]).child("cards").child(card_key).child("revealed").set(!card.revealed);
         },
         Clear() {
-            for (let i = 0; i < this.players.length; i++) {
-                var element = this.players[i];
-                this.$firebaseRefs.players.child(element[".key"]).child("played").remove();
-            } 
+            this.$firebaseRefs.remove();
         }
     }
 };
