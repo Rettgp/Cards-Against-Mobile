@@ -68,7 +68,7 @@
             <f7-page-content style="overflow: visible;">
               <black-card @click.native="DrawBlackCard" :game="game_id" :text="black_card.text" :pick="black_card.pick"/>
               <played-cards :game="game_id" ref="whiteCardsPlayed"/>
-              <player-hand ref="playerHand"/>
+              <player-hand ref="playerHand" :game="game_id" :name="name" />
             </f7-page-content>
           </f7-page>
 
@@ -142,7 +142,7 @@ export default {
                         
           if (this.name != "") {
             this.game_id = this.game_id == "" ? new_game_id : this.game_id;
-            DB.ref(this.game_id + "/players/" + this.name).set({ score: 0 });
+            DB.ref(this.game_id + "/players/" + this.name + "/score");
             this.$f7.closeModal(".login-screen", true);
           }
         }

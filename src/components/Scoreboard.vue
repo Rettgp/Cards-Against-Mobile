@@ -32,15 +32,27 @@ export default {
             this.$bindAsArray('players', DB.ref(this.game + "/players"))
         }
     },
+    firebase: {
+        players: {
+            source: DB.ref(this.game + "/players")
+        }
+    },
     methods: {
         Increment(player) {
-            this.$firebaseRefs.players.child(player[".key"]).update({ score: player.score + 1 });
+            if (typeof player.score == "undefined")
+            {
+                player.score = 0;
+            }
+            this.$firebaseRefs.players.child(player[".key"]).child("score").set(player.score + 1);
         },
         Decrement(player) {
-            this.$firebaseRefs.players.child(player[".key"]).update({ score: player.score - 1 });
+            if (typeof player.score == "undefined")
+            {
+                player.score = 0;
+            }
+            this.$firebaseRefs.players.child(player[".key"]).child("score").set(player.score - 1);
         }
     }
-
 };
 
 </script>:

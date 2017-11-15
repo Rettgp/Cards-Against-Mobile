@@ -11,6 +11,7 @@
 <script>
 let cardId = 1;
 
+import {DB} from "../Firebase.js";
 import WhiteCard from "./WhiteCard.vue";
 export default {
     components: {
@@ -21,9 +22,29 @@ export default {
             hand: []
         };
     },
+    props: {
+        game: {
+            type: String,
+            required: true
+        },
+        name: {
+            type: String,
+            required: true
+        }
+    },
+    watch: {
+        game: function (newVal) {
+            this.$bindAsArray('hand', DB.ref(this.game + "/players/" + this.name + "/hand"))
+        }
+    },
+    firebase: {
+        hand: {
+            source: DB.ref(this.game + "/players/" + this.name + "/hand")
+        }
+    },
     methods: {
         UpdateHand(white_card) {
-            this.hand.push({ id: ++cardId, text: white_card, isSelected: false });
+            this.$firebaseRefs.hand.push({ id: ++cardId, text: white_card, isSelected: false });
         },
         GetSelected() {
             for (var index = 0; index < this.hand.length; index++) {
@@ -39,10 +60,10 @@ export default {
         RemoveCard(played_card) {
             for (var index = 0; index < this.hand.length; index++) {
                 let card = this.hand[index];
+                let card_key = card[".key"];
                 if ( card.isSelected == true && card.text == played_card )
                 {
-                    card.isSelected = false;
-                    this.hand.splice( index, 1 );
+                    this.$firebaseRefs.hand.child(card_key).remove();
                 }
             };
         }
@@ -66,7 +87,7 @@ export default {
 .hand .selected {
     z-index: 200;
     border: 1px solid #007aff;
-    transform: translateY(-10%);
+    transform: translateY(-9%);
 }
 
 .cah-card {
