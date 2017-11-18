@@ -38,5 +38,6 @@ jspm_packages
 
 .DS_Store
 node_modules/
+functions/node_modules/
 dist/
 npm-debug.log

@@ -86,6 +86,7 @@ import Scoreboard from "./components/Scoreboard.vue";
 import draggable from "vuedraggable";
 import Deck from "./Deck.js";
 import { DB } from "./Firebase.js";
+import firebase from "firebase";
 
 let deck = new Deck();
 export default {
@@ -142,7 +143,7 @@ export default {
                         
           if (this.name != "") {
             this.game_id = this.game_id == "" ? new_game_id : this.game_id;
-            DB.ref(this.game_id + "/players/" + this.name + "/score");
+            DB.ref(this.game_id).child("timestamp").set(firebase.database.ServerValue.TIMESTAMP);
             this.$f7.closeModal(".login-screen", true);
           }
         }
