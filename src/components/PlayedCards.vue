@@ -1,12 +1,10 @@
 <template>
 <div class="players-container">
     <div class="player-container" v-for="player in played" :key="player.id">
-        <div class="card-container" v-for="(card, card_key) in player.cards" :key="card.id">
-            <WhiteCard v-bind:class="{ revealed: card.revealed }" 
+            <WhiteCard v-bind:class="{ revealed: card.revealed }" v-for="(card, card_key) in player.cards" :key="card.id"
                 @click.native="Reveal( player, card, card_key, $event )"
                 :text="RevealedText(card)"
             />
-        </div>
     </div>
 </div>
 </template>
@@ -25,7 +23,7 @@ export default {
     data: function() {
         return {
             played: [],
-            hiddenText: ""
+            hiddenText: "",
         };
     },
     props: {
@@ -57,10 +55,11 @@ export default {
             return card.revealed ? card.text : this.hiddenText;
         },
         Reveal(player, card, card_key, event) {
-            console.log(player);
             this.$firebaseRefs.played.child(player[".key"]).child("cards").child(card_key).child("revealed").set(!card.revealed);
         },
         Clear() {
+            this.cardId = 1;
+            this.playerId = 1;
             this.$firebaseRefs.played.remove();
         }
     }
@@ -70,28 +69,32 @@ export default {
 <style scoped>
 
 .players-container {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.card-container {
     vertical-align: top;
     display: inline-block;
-    direction: left;
+    width: 45%;
+    height: 51%;
+    overflow-y: scroll;
 }
 
-:not(.revealed) {
+.player-container {
+    display: block;
+    margin-bottom: -2.5em;
+}
+
+div[class=cah-card] {
     background-image: url("../assets/CAH-Card-Logo.svg");
     background-repeat: no-repeat;
     height: 2em; 
     width: 1em;
-    margin-bottom: 2em;
-    margin-right: 1.5em;
+    margin-right: -1.5em;
     white-space: nowrap;
 }
 
-.revealed {
-    transform: translateX(-9.5em);
+div[class="cah-card revealed"] {
+    position: fixed;
+    top: 4em;
+    left: 50%;
+    /* transform: translateX(-9.5em); */
 }
 
 </style>

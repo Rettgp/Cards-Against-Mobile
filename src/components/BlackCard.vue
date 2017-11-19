@@ -52,7 +52,7 @@ export default {
 <style scoped>
 .cah-card {
     height: 45%;
-    width: 55%;
+    width: 45%;
     color: white;
     background-color: black;
     float: left;

@@ -32,6 +32,8 @@ import VueFire from "vuefire"
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue)
 Vue.use(VueFire)
+var VueTouch = require('vue-touch')
+Vue.use(VueTouch)
 
 // Init App
 new Vue({

@@ -1,10 +1,10 @@
 <template>
 <div class="hand">
-    <WhiteCard style="margin-top: 1em; height: 65%; width: 45%;" v-for="card in hand" :key="card.id"
+        <span class="hand-size">{{hand.length}} / 10</span>
+    <WhiteCard @swipeup="PlayCard" style="margin-top: 1em; height: 65%; width: 45%;" v-for="card in hand" :key="card.id"
         v-bind:class="{ selected: card.isSelected }" 
         @click.native="card.isSelected = !card.isSelected" 
         :text="card.text"/>
-    <span class="hand-size">{{hand.length}} / 10</span>
 </div>
 </template>
 
@@ -58,6 +58,10 @@ export default {
 
             return "";
         },
+        PlayCard() {
+            console.log("PLAY");
+            this.$emit("PlaySelectedCard");
+        },
         RemoveCard(played_card) {
             for (var index = 0; index < this.hand.length; index++) {
                 let card = this.hand[index];
@@ -99,8 +103,10 @@ export default {
 }
 
 .hand-size {
+    transform: translate3d(0,0,0);
     position: fixed;
     left: 0;
+    z-index: 300;
     font-weight: bold;
     font-family: "Helvetica Neue", "Helvetica"; 
 }

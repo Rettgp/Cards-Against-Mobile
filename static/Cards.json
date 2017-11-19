@@ -17,7 +17,8 @@
             "pick": 1
         },
         {
-            "text": "This is the way the world ends \/ This is the way the world ends \/ Not with a bang but with ___.",
+            "text":
+                "This is the way the world ends / This is the way the world ends / Not with a bang but with ___.",
             "pick": 1
         },
         {
@@ -33,7 +34,8 @@
             "pick": 1
         },
         {
-            "text": "MTV's new reality show features eight washed-up celebrities living with ___.",
+            "text":
+                "MTV's new reality show features eight washed-up celebrities living with ___.",
             "pick": 1
         },
         {
@@ -41,11 +43,13 @@
             "pick": 1
         },
         {
-            "text": "I'm sorry, Professor, but I couldn't complete my homework because of ___.",
+            "text":
+                "I'm sorry, Professor, but I couldn't complete my homework because of ___.",
             "pick": 1
         },
         {
-            "text": "Alternative medicine is now embracing the curative powers of ___.",
+            "text":
+                "Alternative medicine is now embracing the curative powers of ___.",
             "pick": 1
         },
         {
@@ -57,11 +61,13 @@
             "pick": 1
         },
         {
-            "text": "It's a pity that kids these days are all getting involved with ___.",
+            "text":
+                "It's a pity that kids these days are all getting involved with ___.",
             "pick": 1
         },
         {
-            "text": "In the new Disney Channel Original Movie, Hannah Montana struggles with ___ for the first time.",
+            "text":
+                "In the new Disney Channel Original Movie, Hannah Montana struggles with ___ for the first time.",
             "pick": 1
         },
         {
@@ -81,11 +87,13 @@
             "pick": 1
         },
         {
-            "text": "Next from J.K. Rowling: Harry Potter and the Chamber of ___.",
+            "text":
+                "Next from J.K. Rowling: Harry Potter and the Chamber of ___.",
             "pick": 1
         },
         {
-            "text": "A romantic, candlelit dinner would be incomplete without ___.",
+            "text":
+                "A romantic, candlelit dinner would be incomplete without ___.",
             "pick": 1
         },
         {
@@ -141,11 +149,13 @@
             "pick": 1
         },
         {
-            "text": "Major League Baseball has banned ___ for giving players an unfair advantage.",
+            "text":
+                "Major League Baseball has banned ___ for giving players an unfair advantage.",
             "pick": 1
         },
         {
-            "text": "When I am a billionaire, I shall erect a 50-foot statue to commemorate ___.",
+            "text":
+                "When I am a billionaire, I shall erect a 50-foot statue to commemorate ___.",
             "pick": 1
         },
         {
@@ -153,7 +163,8 @@
             "pick": 1
         },
         {
-            "text": "When I am the President of the United States, I will create the Department of ___.",
+            "text":
+                "When I am the President of the United States, I will create the Department of ___.",
             "pick": 1
         },
         {
@@ -165,11 +176,13 @@
             "pick": 1
         },
         {
-            "text": "What will I bring back in time to convince people that I am a powerful wizard?",
+            "text":
+                "What will I bring back in time to convince people that I am a powerful wizard?",
             "pick": 1
         },
         {
-            "text": "While the United States raced the Soviet Union to the moon, the Mexican government funneled millions of pesos into research on ___.",
+            "text":
+                "While the United States raced the Soviet Union to the moon, the Mexican government funneled millions of pesos into research on ___.",
             "pick": 1
         },
         {
@@ -205,15 +218,18 @@
             "pick": 1
         },
         {
-            "text": "When Pharaoh remained unmoved, Moses called down a plague of ___.",
+            "text":
+                "When Pharaoh remained unmoved, Moses called down a plague of ___.",
             "pick": 1
         },
         {
-            "text": "I do not know with which weapons World War III will be fought, but World War IV will be fought with ___.",
+            "text":
+                "I do not know with which weapons World War III will be fought, but World War IV will be fought with ___.",
             "pick": 1
         },
         {
-            "text": "What's Teach for America using to inspire inner city students to succeed?",
+            "text":
+                "What's Teach for America using to inspire inner city students to succeed?",
             "pick": 1
         },
         {
@@ -225,7 +241,8 @@
             "pick": 1
         },
         {
-            "text": "Studies show that lab rats navigate mazes 50% faster after being exposed to ___.",
+            "text":
+                "Studies show that lab rats navigate mazes 50% faster after being exposed to ___.",
             "pick": 1
         },
         {
@@ -265,7 +282,8 @@
             "pick": 2
         },
         {
-            "text": "Rumor has it that Vladimir Putin's favorite delicacy is ___ stuffed with ___.",
+            "text":
+                "Rumor has it that Vladimir Putin's favorite delicacy is ___ stuffed with ___.",
             "pick": 2
         },
         {
@@ -277,7 +295,8 @@
             "pick": 3
         },
         {
-            "text": "In M. Night Shyamalan's new movie, Bruce Willis discovers that ___ had really been ___ all along.",
+            "text":
+                "In M. Night Shyamalan's new movie, Bruce Willis discovers that ___ had really been ___ all along.",
             "pick": 2
         },
         {
@@ -301,19 +320,22 @@
             "pick": 3
         },
         {
-            "text": "What's the next superhero\/sidekick duo?",
+            "text": "What's the next superhero/sidekick duo?",
             "pick": 2
         },
         {
-            "text": "Dear Abby,<br><br>I'm having some trouble with ___ and would like your advice.",
+            "text":
+                "Dear Abby,<br><br>I'm having some trouble with ___ and would like your advice.",
             "pick": 1
         },
         {
-            "text": "After the earthquake, Sean Penn brought ___ to the people of Haiti.",
+            "text":
+                "After the earthquake, Sean Penn brought ___ to the people of Haiti.",
             "pick": 1
         },
         {
-            "text": "In L.A. County Jail, word is you can trade 200 cigarettes for ___.",
+            "text":
+                "In L.A. County Jail, word is you can trade 200 cigarettes for ___.",
             "pick": 1
         },
         {
@@ -321,7 +343,8 @@
             "pick": 1
         },
         {
-            "text": "Life for American Indians was forever changed when the White Man introduced them to ___.",
+            "text":
+                "Life for American Indians was forever changed when the White Man introduced them to ___.",
             "pick": 1
         },
         {
@@ -333,7 +356,8 @@
             "pick": 2
         },
         {
-            "text": "Here is the church<br>Here is the steeple<br>Open the doors<br>And there is ___.",
+            "text":
+                "Here is the church<br>Here is the steeple<br>Open the doors<br>And there is ___.",
             "pick": 1
         },
         {
@@ -341,11 +365,13 @@
             "pick": 1
         },
         {
-            "text": "During his childhood, Salvador Dal&iacute; produced hundreds of paintings of ___.",
+            "text":
+                "During his childhood, Salvador Dal&iacute; produced hundreds of paintings of ___.",
             "pick": 1
         },
         {
-            "text": "In 1,000 years, when paper money is a distant memory, how will we pay for goods and services?",
+            "text":
+                "In 1,000 years, when paper money is a distant memory, how will we pay for goods and services?",
             "pick": 1
         },
         {
@@ -353,7 +379,8 @@
             "pick": 1
         },
         {
-            "text": "The Smithsonian Museum of Natural History has just opened an exhibit on ___.",
+            "text":
+                "The Smithsonian Museum of Natural History has just opened an exhibit on ___.",
             "pick": 1
         },
         {
@@ -369,7 +396,8 @@
             "pick": 1
         },
         {
-            "text": "In the distant future, historians will agree that ___ marked the beginning of America's decline.",
+            "text":
+                "In the distant future, historians will agree that ___ marked the beginning of America's decline.",
             "pick": 1
         },
         {
@@ -377,15 +405,18 @@
             "pick": 1
         },
         {
-            "text": "This season on Man vs. Wild, Bear Grylls must survive in the depths of the Amazon with only ___ and his wits.",
+            "text":
+                "This season on Man vs. Wild, Bear Grylls must survive in the depths of the Amazon with only ___ and his wits.",
             "pick": 1
         },
         {
-            "text": "Michael Bay's new three-hour action epic pits ___ against ___.",
+            "text":
+                "Michael Bay's new three-hour action epic pits ___ against ___.",
             "pick": 2
         },
         {
-            "text": "And I would have gotten away with it, too, if it hadn't been for ___!",
+            "text":
+                "And I would have gotten away with it, too, if it hadn't been for ___!",
             "pick": 1
         },
         {
@@ -401,11 +432,13 @@
             "pick": 1
         },
         {
-            "text": "In Rome, there are whisperings that the Vatican has a secret room devoted to ___.",
+            "text":
+                "In Rome, there are whisperings that the Vatican has a secret room devoted to ___.",
             "pick": 1
         },
         {
-            "text": "I learned the hard way that you can't cheer up a grieving friend with ___.",
+            "text":
+                "I learned the hard way that you can't cheer up a grieving friend with ___.",
             "pick": 1
         },
         {
@@ -417,15 +450,18 @@
             "pick": 2
         },
         {
-            "text": "In its new tourism campaign, Detroit proudly proclaims that it has finally eliminated ___.",
+            "text":
+                "In its new tourism campaign, Detroit proudly proclaims that it has finally eliminated ___.",
             "pick": 1
         },
         {
-            "text": "In his new self-produced album, Kanye West raps over the sounds of ___.",
+            "text":
+                "In his new self-produced album, Kanye West raps over the sounds of ___.",
             "pick": 1
         },
         {
-            "text": "The socialist governments of Scandinavia have declared that access to ___ is a basic human right.",
+            "text":
+                "The socialist governments of Scandinavia have declared that access to ___ is a basic human right.",
             "pick": 1
         },
         {
@@ -433,11 +469,13 @@
             "pick": 1
         },
         {
-            "text": "Dear Sir or Madam, We regret to inform you that the Office of ___ has denied your request for ___.",
+            "text":
+                "Dear Sir or Madam, We regret to inform you that the Office of ___ has denied your request for ___.",
             "pick": 2
         },
         {
-            "text": "The CIA now interrogates enemy agents by repeatedly subjecting them to ___.",
+            "text":
+                "The CIA now interrogates enemy agents by repeatedly subjecting them to ___.",
             "pick": 1
         },
         {
@@ -449,7 +487,8 @@
             "pick": 1
         },
         {
-            "text": "Before I run for president, I must destroy all evidence of my involvement with ___.",
+            "text":
+                "Before I run for president, I must destroy all evidence of my involvement with ___.",
             "pick": 1
         },
         {
@@ -457,23 +496,28 @@
             "pick": 1
         },
         {
-            "text": "In his newest and most difficult stunt, David Blaine must escape from ___.",
+            "text":
+                "In his newest and most difficult stunt, David Blaine must escape from ___.",
             "pick": 1
         },
         {
-            "text": "This is your captain speaking. Fasten your seatbelts and prepare for ___.",
+            "text":
+                "This is your captain speaking. Fasten your seatbelts and prepare for ___.",
             "pick": 1
         },
         {
-            "text": "My mom freaked out when she looked at my browser history and found ___.com\/___.",
+            "text":
+                "My mom freaked out when she looked at my browser history and found ___.com/___.",
             "pick": 2
         },
         {
-            "text": "The Five Stages of Grief: denial, anger, bargaining, ___, acceptance.",
+            "text":
+                "The Five Stages of Grief: denial, anger, bargaining, ___, acceptance.",
             "pick": 1
         },
         {
-            "text": "Members of New York's social elite are paying thousands of dollars just to experience ___.",
+            "text":
+                "Members of New York's social elite are paying thousands of dollars just to experience ___.",
             "pick": 1
         },
         {
@@ -481,15 +525,18 @@
             "pick": 3
         },
         {
-            "text": "Little Miss Muffet Sat on a tuffet, Eating her curds and ___.",
+            "text":
+                "Little Miss Muffet Sat on a tuffet, Eating her curds and ___.",
             "pick": 1
         },
         {
-            "text": "This month's Cosmo: \"Spice up your sex life by bringing ___ into the bedroom.\"",
+            "text":
+                "This month's Cosmo: \"Spice up your sex life by bringing ___ into the bedroom.\"",
             "pick": 1
         },
         {
-            "text": "If God didn't want us to enjoy ___, he wouldn't have given us ___.",
+            "text":
+                "If God didn't want us to enjoy ___, he wouldn't have given us ___.",
             "pick": 2
         },
         {
@@ -497,15 +544,18 @@
             "pick": 1
         },
         {
-            "text": "After months of debate, the Occupy Wall Street General Assembly could only agree on \"More ___!\"",
+            "text":
+                "After months of debate, the Occupy Wall Street General Assembly could only agree on \"More ___!\"",
             "pick": 1
         },
         {
-            "text": "I spent my whole life working toward ___, only to have it ruined by ___.",
+            "text":
+                "I spent my whole life working toward ___, only to have it ruined by ___.",
             "pick": 2
         },
         {
-            "text": "Next time on Dr. Phil: How to talk to your child about ___.",
+            "text":
+                "Next time on Dr. Phil: How to talk to your child about ___.",
             "pick": 1
         },
         {
@@ -513,11 +563,13 @@
             "pick": 1
         },
         {
-            "text": "Everyone down on the ground! We don't want to hurt anyone. We're just here for ___.",
+            "text":
+                "Everyone down on the ground! We don't want to hurt anyone. We're just here for ___.",
             "pick": 1
         },
         {
-            "text": "The healing process began when I joined a support group for victims of ___.",
+            "text":
+                "The healing process began when I joined a support group for victims of ___.",
             "pick": 1
         },
         {
@@ -525,7 +577,8 @@
             "pick": 1
         },
         {
-            "text": "Charades was ruined for me forever when my mom had to act out ___.",
+            "text":
+                "Charades was ruined for me forever when my mom had to act out ___.",
             "pick": 1
         },
         {
@@ -533,11 +586,13 @@
             "pick": 2
         },
         {
-            "text": "Tonight on 20\/20: What you don't know about ___ could kill you.",
+            "text":
+                "Tonight on 20/20: What you don't know about ___ could kill you.",
             "pick": 1
         },
         {
-            "text": "You haven't truly lived until you've experienced ___ and ___ at the same time.",
+            "text":
+                "You haven't truly lived until you've experienced ___ and ___ at the same time.",
             "pick": 2
         },
         {
@@ -545,7 +600,8 @@
             "pick": 1
         },
         {
-            "text": "My gym teacher got fired for adding ___ to the obstacle course.",
+            "text":
+                "My gym teacher got fired for adding ___ to the obstacle course.",
             "pick": 1
         },
         {
@@ -553,7 +609,8 @@
             "pick": 1
         },
         {
-            "text": "To prepare for his upcoming role, Daniel Day-Lewis immersed himself in the world of ___.",
+            "text":
+                "To prepare for his upcoming role, Daniel Day-Lewis immersed himself in the world of ___.",
             "pick": 1
         },
         {
@@ -561,7 +618,8 @@
             "pick": 2
         },
         {
-            "text": "During high school, I never really fit in until I found ___ club.",
+            "text":
+                "During high school, I never really fit in until I found ___ club.",
             "pick": 1
         },
         {
@@ -569,15 +627,18 @@
             "pick": 1
         },
         {
-            "text": "Listen, son. If you want to get involved with ___, I won't stop you. Just steer clear of ___.",
+            "text":
+                "Listen, son. If you want to get involved with ___, I won't stop you. Just steer clear of ___.",
             "pick": 2
         },
         {
-            "text": "A successful job interview begins with a firm handshake and ends with ___.",
+            "text":
+                "A successful job interview begins with a firm handshake and ends with ___.",
             "pick": 1
         },
         {
-            "text": "Call the law offices of Goldstein &amp; Goldstein, because no one should have to tolerate ___ in the workplace.",
+            "text":
+                "Call the law offices of Goldstein &amp; Goldstein, because no one should have to tolerate ___ in the workplace.",
             "pick": 1
         },
         {
@@ -585,7 +646,8 @@
             "pick": 1
         },
         {
-            "text": "The blind date was going horribly until we discovered our shared interest in ___.",
+            "text":
+                "The blind date was going horribly until we discovered our shared interest in ___.",
             "pick": 1
         },
         {
@@ -593,19 +655,23 @@
             "pick": 1
         },
         {
-            "text": "Turns out that ___-Man was neither the hero we needed nor wanted.",
+            "text":
+                "Turns out that ___-Man was neither the hero we needed nor wanted.",
             "pick": 1
         },
         {
-            "text": "After months of practice with ___, I think I'm finally ready for ___.",
+            "text":
+                "After months of practice with ___, I think I'm finally ready for ___.",
             "pick": 2
         },
         {
-            "text": "In the seventh circle of Hell, sinners must endure ___ for all eternity.",
+            "text":
+                "In the seventh circle of Hell, sinners must endure ___ for all eternity.",
             "pick": 1
         },
         {
-            "text": "As part of his daily regimen, Anderson Cooper sets aside 15 minutes for ___.",
+            "text":
+                "As part of his daily regimen, Anderson Cooper sets aside 15 minutes for ___.",
             "pick": 1
         },
         {
@@ -617,11 +683,12 @@
             "pick": 2
         },
         {
-            "text": "And what did <i>you<\/i> bring for show and tell?",
+            "text": "And what did <i>you</i> bring for show and tell?",
             "pick": 1
         },
         {
-            "text": "I'm not like the rest of you. I'm too rich and busy for ___.",
+            "text":
+                "I'm not like the rest of you. I'm too rich and busy for ___.",
             "pick": 1
         },
         {
@@ -637,7 +704,8 @@
             "pick": 1
         },
         {
-            "text": "As part of his contract, Prince won't perform without ___ in his dressing room.",
+            "text":
+                "As part of his contract, Prince won't perform without ___ in his dressing room.",
             "pick": 1
         },
         {
@@ -645,7 +713,8 @@
             "pick": 1
         },
         {
-            "text": "Dear Leader Kim Jong-un,<br>our village praises your infinite wisdom with a humble offering of ___.",
+            "text":
+                "Dear Leader Kim Jong-un,<br>our village praises your infinite wisdom with a humble offering of ___.",
             "pick": 1
         },
         {
@@ -653,23 +722,28 @@
             "pick": 2
         },
         {
-            "text": "She's up all night for good fun.<br>I'm up all night for ___.",
+            "text":
+                "She's up all night for good fun.<br>I'm up all night for ___.",
             "pick": 1
         },
         {
-            "text": "Alright, bros. Our frat house is condemned, and all the hot slampieces are over at Gamma Phi. The time has come to commence Operation ___.",
+            "text":
+                "Alright, bros. Our frat house is condemned, and all the hot slampieces are over at Gamma Phi. The time has come to commence Operation ___.",
             "pick": 1
         },
         {
-            "text": "The Japanese have developed a smaller, more efficient version of ___.",
+            "text":
+                "The Japanese have developed a smaller, more efficient version of ___.",
             "pick": 1
         },
         {
-            "text": "In return for my soul, the Devil promised me ___, but all I got was ___.",
+            "text":
+                "In return for my soul, the Devil promised me ___, but all I got was ___.",
             "pick": 2
         },
         {
-            "text": "You guys, I saw this crazy movie last night. It opens on ___, and then there's some stuff about ___, and then it ends with ___.",
+            "text":
+                "You guys, I saw this crazy movie last night. It opens on ___, and then there's some stuff about ___, and then it ends with ___.",
             "pick": 3
         },
         {
@@ -677,11 +751,13 @@
             "pick": 2
         },
         {
-            "text": "Wes Anderson's new film tells the story of a precocious child coming to terms with ___.",
+            "text":
+                "Wes Anderson's new film tells the story of a precocious child coming to terms with ___.",
             "pick": 1
         },
         {
-            "text": "In the beginning, there was ___.<br>And the Lord said, \"Let there be ___.\"",
+            "text":
+                "In the beginning, there was ___.<br>And the Lord said, \"Let there be ___.\"",
             "pick": 2
         },
         {
@@ -689,11 +765,13 @@
             "pick": 1
         },
         {
-            "text": "We never did find ___, but along the way we sure learned a lot about ___.",
+            "text":
+                "We never did find ___, but along the way we sure learned a lot about ___.",
             "pick": 2
         },
         {
-            "text": "You've seen the bearded lady!<br>You've seen the ring of fire!<br>Now, ladies and gentlemen, feast your eyes upon ___!",
+            "text":
+                "You've seen the bearded lady!<br>You've seen the ring of fire!<br>Now, ladies and gentlemen, feast your eyes upon ___!",
             "pick": 1
         },
         {
@@ -701,11 +779,13 @@
             "pick": 1
         },
         {
-            "text": "I'm sorry, sir, but we don't allow ___ at the country club.",
+            "text":
+                "I'm sorry, sir, but we don't allow ___ at the country club.",
             "pick": 1
         },
         {
-            "text": "2 AM in the city that never sleeps. The door swings open and <i>she<\/i> walks in, legs up to here. Something in her eyes tells me she's looking for ___.",
+            "text":
+                "2 AM in the city that never sleeps. The door swings open and <i>she</i> walks in, legs up to here. Something in her eyes tells me she's looking for ___.",
             "pick": 1
         },
         {
@@ -713,15 +793,17 @@
             "pick": 1
         },
         {
-            "text": "Oprah's book of the month is \"___ For ___: A Story of Hope.\"",
+            "text":
+                "Oprah's book of the month is \"___ For ___: A Story of Hope.\"",
             "pick": 2
         },
         {
-            "text": "Do <i>not<\/i> fuck with me! I am literally ___ right now.",
+            "text": "Do <i>not</i> fuck with me! I am literally ___ right now.",
             "pick": 1
         },
         {
-            "text": "Adventure.<br>Romance.<br>___.<br><br>From Paramount Pictures, \"___.\"",
+            "text":
+                "Adventure.<br>Romance.<br>___.<br><br>From Paramount Pictures, \"___.\"",
             "pick": 2
         },
         {
@@ -729,7 +811,8 @@
             "pick": 2
         },
         {
-            "text": "It lurks in the night. It hungers for flesh. This summer, no one is safe from ___.",
+            "text":
+                "It lurks in the night. It hungers for flesh. This summer, no one is safe from ___.",
             "pick": 1
         },
         {
@@ -737,11 +820,13 @@
             "pick": 2
         },
         {
-            "text": "This is the prime of my life. I'm young, hot, and full of ___.",
+            "text":
+                "This is the prime of my life. I'm young, hot, and full of ___.",
             "pick": 1
         },
         {
-            "text": "I'm pretty sure I'm high right now, because I'm absolutely mesmerized by ___.",
+            "text":
+                "I'm pretty sure I'm high right now, because I'm absolutely mesmerized by ___.",
             "pick": 1
         },
         {
@@ -753,39 +838,48 @@
             "pick": 2
         },
         {
-            "text": "Forget everything you know about ___, because now we've supercharged it with ___!",
+            "text":
+                "Forget everything you know about ___, because now we've supercharged it with ___!",
             "pick": 2
         },
         {
-            "text": "Honey, I have a new role-play I want to try tonight! You can be ___, and I'll be ___.",
+            "text":
+                "Honey, I have a new role-play I want to try tonight! You can be ___, and I'll be ___.",
             "pick": 2
         },
         {
-            "text": "Do the Dew &reg; with our most extreme flavor yet! Get ready for Mountain Dew ___!",
+            "text":
+                "Do the Dew &reg; with our most extreme flavor yet! Get ready for Mountain Dew ___!",
             "pick": 1
         },
         {
-            "text": "Armani suit: $1,000. Dinner for two at that swanky restaurant: $300. The look on her face when you surprise her with ___: priceless.",
+            "text":
+                "Armani suit: $1,000. Dinner for two at that swanky restaurant: $300. The look on her face when you surprise her with ___: priceless.",
             "pick": 1
         },
         {
-            "text": "In his new action comedy, Jackie Chan must fend off ninjas while also dealing with ___.",
+            "text":
+                "In his new action comedy, Jackie Chan must fend off ninjas while also dealing with ___.",
             "pick": 1
         },
         {
-            "text": "Well what do you have to say for yourself, Casey? This is the third time you've been sent to the principal's office for ___.",
+            "text":
+                "Well what do you have to say for yourself, Casey? This is the third time you've been sent to the principal's office for ___.",
             "pick": 1
         },
         {
-            "text": "Here at the Academy for Gifted Children, we allow students to explore ___ at their own pace.",
+            "text":
+                "Here at the Academy for Gifted Children, we allow students to explore ___ at their own pace.",
             "pick": 1
         },
         {
-            "text": "Heed my voice, mortals! I am the god of ___, and I will not tolerate ___!",
+            "text":
+                "Heed my voice, mortals! I am the god of ___, and I will not tolerate ___!",
             "pick": 2
         },
         {
-            "text": "I don't mean to brag, but they call me the Michael Jordan of ___.",
+            "text":
+                "I don't mean to brag, but they call me the Michael Jordan of ___.",
             "pick": 1
         },
         {
@@ -797,7 +891,8 @@
             "pick": 1
         },
         {
-            "text": "Hi MTV! My name is Kendra, I live in Malibu, I'm into ___, and I love to have a good time.",
+            "text":
+                "Hi MTV! My name is Kendra, I live in Malibu, I'm into ___, and I love to have a good time.",
             "pick": 1
         },
         {
@@ -805,7 +900,8 @@
             "pick": 2
         },
         {
-            "text": "Life's pretty tough in the fast lane. That's why I never leave the house without ___.",
+            "text":
+                "Life's pretty tough in the fast lane. That's why I never leave the house without ___.",
             "pick": 1
         },
         {
@@ -813,7 +909,8 @@
             "pick": 1
         },
         {
-            "text": "Get ready for the movie of the summer! One cop plays by the book. The other's only interested in one thing: ___.",
+            "text":
+                "Get ready for the movie of the summer! One cop plays by the book. The other's only interested in one thing: ___.",
             "pick": 1
         },
         {
@@ -821,11 +918,13 @@
             "pick": 1
         },
         {
-            "text": "In his farewell address, George Washington famously warned Americans about the dangers of ___.",
+            "text":
+                "In his farewell address, George Washington famously warned Americans about the dangers of ___.",
             "pick": 1
         },
         {
-            "text": "Don't forget! Beginning this week, Casual Friday will officially become \"___ Friday.\"",
+            "text":
+                "Don't forget! Beginning this week, Casual Friday will officially become \"___ Friday.\"",
             "pick": 1
         },
         {
@@ -837,15 +936,18 @@
             "pick": 1
         },
         {
-            "text": "Well if ___ is good enough for ___, it's good enough for me.",
+            "text":
+                "Well if ___ is good enough for ___, it's good enough for me.",
             "pick": 2
         },
         {
-            "text": "Hi, this is Jim from accounting. We noticed a $1,200 charge labeled \"___\". Can you explain?",
+            "text":
+                "Hi, this is Jim from accounting. We noticed a $1,200 charge labeled \"___\". Can you explain?",
             "pick": 1
         },
         {
-            "text": "Do you lack energy? Does it sometimes feel like the whole world is ___? Zoloft.&reg;",
+            "text":
+                "Do you lack energy? Does it sometimes feel like the whole world is ___? Zoloft.&reg;",
             "pick": 1
         },
         {
@@ -853,7 +955,8 @@
             "pick": 1
         },
         {
-            "text": "Now in bookstores: \"The Audacity of ___\", by Barack Obama.",
+            "text":
+                "Now in bookstores: \"The Audacity of ___\", by Barack Obama.",
             "pick": 1
         },
         {
@@ -862,11 +965,13 @@
         },
         {
             "pick": 1,
-            "text": "I work my ass off all day for this family, and this is what I come home to? ___!?"
+            "text":
+                "I work my ass off all day for this family, and this is what I come home to? ___!?"
         },
         {
             "pick": 1,
-            "text": "I have a strict policy. First date, dinner. Second date, kiss. Third date, ___."
+            "text":
+                "I have a strict policy. First date, dinner. Second date, kiss. Third date, ___."
         },
         {
             "pick": 1,
@@ -874,7 +979,8 @@
         },
         {
             "pick": 1,
-            "text": "This is America. If you don't work hard, you don't succeed. I don't care if you're black, white, purple, or ___."
+            "text":
+                "This is America. If you don't work hard, you don't succeed. I don't care if you're black, white, purple, or ___."
         },
         {
             "pick": 1,
@@ -882,15 +988,18 @@
         },
         {
             "pick": 1,
-            "text": "James is a lonely boy. But when he discovers a secret door in his attic, he meets a magical new friend: ___."
+            "text":
+                "James is a lonely boy. But when he discovers a secret door in his attic, he meets a magical new friend: ___."
         },
         {
             "pick": 1,
-            "text": "Don't worry kid. It gets better. I've been living with ___ for 20 years."
+            "text":
+                "Don't worry kid. It gets better. I've been living with ___ for 20 years."
         },
         {
             "pick": 1,
-            "text": "My grandfather worked his way up from nothing. When he came to this country, all he had was the shoes on his feet and ___."
+            "text":
+                "My grandfather worked his way up from nothing. When he came to this country, all he had was the shoes on his feet and ___."
         },
         {
             "pick": 1,
@@ -898,11 +1007,13 @@
         },
         {
             "pick": 1,
-            "text": "You are not alone. Millions of Americans struggle with ___ every day."
+            "text":
+                "You are not alone. Millions of Americans struggle with ___ every day."
         },
         {
             "pick": 1,
-            "text": "Come to Dubai, where you can relax in our world famous spas, experience the nightlife, or simply enjoy ___ by the poolside."
+            "text":
+                "Come to Dubai, where you can relax in our world famous spas, experience the nightlife, or simply enjoy ___ by the poolside."
         },
         {
             "pick": 1,
@@ -910,11 +1021,13 @@
         },
         {
             "pick": 1,
-            "text": "Listen Gary, I like you. But if you want that corner office, you're going to have to show me ___."
+            "text":
+                "Listen Gary, I like you. But if you want that corner office, you're going to have to show me ___."
         },
         {
             "pick": 1,
-            "text": "I went to the desert and ate of the peyote cactus. Turns out my spirit animal is ___."
+            "text":
+                "I went to the desert and ate of the peyote cactus. Turns out my spirit animal is ___."
         },
         {
             "pick": 1,
@@ -922,7 +1035,8 @@
         },
         {
             "pick": 1,
-            "text": "The six things I could never do without: oxygen, Facebook, chocolate, Netflix, friends, and ___ LOL!"
+            "text":
+                "The six things I could never do without: oxygen, Facebook, chocolate, Netflix, friends, and ___ LOL!"
         },
         {
             "pick": 1,
@@ -930,36 +1044,217 @@
         },
         {
             "pick": 1,
-            "text": "Puberty is a time of change. You might notice hair growing in new places. You might develop an interest in ___. This is normal."
+            "text":
+                "Puberty is a time of change. You might notice hair growing in new places. You might develop an interest in ___. This is normal."
         },
         {
             "pick": 1,
-            "text": "I'm sorry, Mrs. Chen, but there was nothing we could do. At 4:15 this morning, your son succumbed to ___."
+            "text":
+                "I'm sorry, Mrs. Chen, but there was nothing we could do. At 4:15 this morning, your son succumbed to ___."
         },
         {
             "pick": 1,
-            "text": "I'm Miss Tennessee, and if I could make the world better by changing one thing, I would get rid of ___."
+            "text":
+                "I'm Miss Tennessee, and if I could make the world better by changing one thing, I would get rid of ___."
         },
         {
             "pick": 1,
-            "text": "Tonight we will have sex. And afterwards, If you'd like, a little bit of ___."
+            "text":
+                "Tonight we will have sex. And afterwards, If you'd like, a little bit of ___."
         },
         {
             "pick": 1,
-            "text": "Everybody join hands and close your eyes. Do you sense that? That's the presence of ___ in this room."
+            "text":
+                "Everybody join hands and close your eyes. Do you sense that? That's the presence of ___ in this room."
         },
         {
             "pick": 1,
-            "text": "To become a true Yanomamo warrior, you must prove that you can withstand ___ without crying out."
+            "text":
+                "To become a true Yanomamo warrior, you must prove that you can withstand ___ without crying out."
         },
         {
             "pick": 1,
-            "text": "Y'all ready to get this thing started? I'm Nick Cannon, and this is America's Got ___."
+            "text":
+                "Y'all ready to get this thing started? I'm Nick Cannon, and this is America's Got ___."
         },
         {
             "pick": 1,
-            "text": "If you had to describe the Card Czar, using only one of the cards in your hand, which one would it be?"
-        }
+            "text":
+                "If you had to describe the Card Czar, using only one of the cards in your hand, which one would it be?"
+        },
+        { "pick": 2, "text": "___ be all like ___." },
+        {
+            "pick": 1,
+            "text":
+                "Art isn't just a painting in a stuffy museum. Art is alive. Art is ___."
+        },
+        {
+            "pick": 1,
+            "text":
+                "As reparations for slavery, all African Americans will receive ___."
+        },
+        {
+            "pick": 1,
+            "text":
+                "As Teddy Roosevelt said, the four manly virtues are honor, temperance, industry, and ___."
+        },
+        {
+            "pick": 1,
+            "text":
+                "Best you go back where you came from, now. We don't take too kindly to ___ in these parts."
+        },
+        { "pick": 1, "text": "CNN breaking news! Scientists discover ___." },
+        { "pick": 1, "text": "Coming to Red Lobster&reg; this month, ___." },
+        {
+            "pick": 1,
+            "text":
+                "Congratulations! You have been selected for our summer internship program. While we are unable to offer a salary, we can offer you ___."
+        },
+        {
+            "pick": 1,
+            "text":
+                "Dance like there's nobody watching, love like you'll never be hurt, and live like you're ___."
+        },
+        { "pick": 1, "text": "Errbody in the club ___." },
+        { "pick": 1, "text": "Feeling so grateful! #amazing #mylife #___." },
+        { "pick": 1, "text": "Girls just wanna have ___." },
+        { "pick": 1, "text": "Google Calendar alert: ___ in 10 minutes." },
+        { "pick": 1, "text": "I don't believe in God. I believe in ___." },
+        {
+            "pick": 1,
+            "text":
+                "I got rhythm, I've got music, I've got ___. Who could ask for anything more?"
+        },
+        {
+            "pick": 1,
+            "text": "I may not be much to look at, but I fuck like ___."
+        },
+        {
+            "pick": 1,
+            "text":
+                "I tell you, it was a non-stop fuckfest. When it was over, my asshole looked like ___."
+        },
+        {
+            "pick": 1,
+            "text":
+                "I'll take the BBQ bacon burger with friend egg and fuck it how about ___."
+        },
+        {
+            "pick": 1,
+            "text":
+                "I'm sorry, sir, but your insurance plan doesn't cover injuries caused by ___."
+        },
+        {
+            "pick": 1,
+            "text":
+                "I've had a horrible vision, father. I saw mountains crumbling, stars falling from the sky. I saw ___."
+        },
+        { "pick": 1, "text": "If at first you don't succeed, try ___." },
+        {
+            "pick": 1,
+            "text":
+                "In the 1950s, psychologists prescribed ___ as a cure for homosexually."
+        },
+        { "pick": 1, "text": "LSD + ___ = really bad time." },
+        {
+            "pick": 1,
+            "text":
+                "\"Mom's to-do list:<br/>- Buy Groceries.<br/>- Clean up ___.<br/>- Soccer Practice.\""
+        },
+        {
+            "pick": 1,
+            "text":
+                "Most Americans would not vote for a candidate who is openly ___."
+        },
+        {
+            "pick": 1,
+            "text":
+                "No, no, no, no, no, no, NO! I will NOT let ___ ruin this wedding."
+        },
+        { "pick": 1, "text": "Oh no! Siri, how do I fix ___?" },
+        {
+            "pick": 1,
+            "text":
+                "One more thing. Watch out for Big Mike. They say he killed a man with ___."
+        },
+        { "pick": 1, "text": "Ooo, daddy like ___." },
+        {
+            "pick": 1,
+            "text":
+                "Poor Brandon, still living in his parent's basement. I heard he never got over ___."
+        },
+        {
+            "pick": 1,
+            "text": "Run, run, as fast as you can! You can't catch me, I'm ___!"
+        },
+        { "pick": 1, "text": "She's a lady in the streets, ___ in the sheets." },
+        {
+            "pick": 1,
+            "text":
+                "She's just one of the guys, you know? She likes beer, and football, and ___."
+        },
+        {
+            "pick": 1,
+            "text":
+                "Son, take it from someone who's been around the block a few times. Nothin' puts her in the mood like ___."
+        },
+        {
+            "pick": 1,
+            "text": "Summer lovin', had me a blast. ___, happened so fast."
+        },
+        {
+            "pick": 1,
+            "text":
+                "\"The top Google auto-complete results for \"Barack Obama\":</br>- Barack Obama Height.</br>- Barack Obama net worth.</br>- Barack Obama ___.\""
+        },
+        {
+            "pick": 1,
+            "text":
+                "Then the princess kissed the frog, and all of a sudden the frog was ___!"
+        },
+        { "pick": 1, "text": "There is no God. It's just ___ and then you die." },
+        {
+            "pick": 1,
+            "text":
+                "This Friday at the Liquid Lunge, it's ___ Night! Ladies drink free."
+        },
+        {
+            "pick": 1,
+            "text":
+                "We do not shake with our left hands in this country. That is the hand we use for ___."
+        },
+        { "pick": 1, "text": "Well if ___ is a crime, then lock me up!" },
+        {
+            "pick": 1,
+            "text":
+                "Well, shit. My eyes ain't so good, but I'll eat my own boot if that ain't ___!"
+        },
+        { "pick": 1, "text": "What are all those whales singing about?" },
+        { "pick": 1, "text": "What sucks balls?" },
+        { "pick": 1, "text": "What totally destroyed my asshole?" },
+        { "pick": 1, "text": "What turned me into a Republican?" },
+        { "pick": 1, "text": "What will end racism once and for all?" },
+        {
+            "pick": 1,
+            "text": "What's a total waste of Hillary Clinton's time?"
+        },
+        {
+            "pick": 1,
+            "text": "What's about to take dance floor to the next level?"
+        },
+        { "pick": 1, "text": "What's the gayest?" },
+        { "pick": 1, "text": "What's the most problematic?" },
+        {
+            "pick": 1,
+            "text": "Why am I laughing and crying and taking off my clothes?"
+        },
+        {
+            "pick": 1,
+            "text":
+                "With a one-time gift of just $10, you can save this child from ___."
+        },
+        { "pick": 1, "text": "You know who else liked ___? Hitler." },
+        { "pick": 1, "text": "You won't believe what's in my pussy. It's ___." }
     ],
     "whiteCards": [
         "Coat hanger abortions.",
@@ -1641,7 +1936,7 @@
         "Crying into the pages of Sylvia Plath.",
         "The moist, demanding chasm of his mouth.",
         "Filling every orifice with butterscotch pudding.",
-        "An all-midget production of Shakespeare's <i>Richard III<\/i>.",
+        "An all-midget production of Shakespeare's <i>Richard III</i>.",
         "Screaming like a maniac.",
         "Not contributing to society in any meaningful way.",
         "A pile of squirming bodies.",
@@ -1871,7 +2166,252 @@
         "Morpheus.",
         "Peeing into a girl's butt to make a baby.",
         "Generally having no idea of what's going on.",
-        "No longer finding any Cards Against Humanity card funny."
+        "No longer finding any Cards Against Humanity card funny.",
+        "10 football players with erections barreling towards you at full speed.",
+        "10,000 shrieking teenage girls.",
+        "A big ol' plate of fettuccine alfredo.",
+        "A big, beautiful mouth packed to the brim with sparkling teeth.",
+        "A black friend.",
+        "A burrito that's just sour cream.",
+        "A cheerfulness that belies a deep-seated self-loathing.",
+        "A cold and indifferent universe.",
+        "A creature made of penises that must constantly arouse itself to survive.",
+        "A creepy child singing a nursery rhyme.",
+        "A dolphin that learns to talk and becomes the Dead of Harvard Law School.",
+        "A duffel bag full of lizards.",
+        "A finger up the butt.",
+        "A genetic predisposition for alcoholism.",
+        "A gun that shoots cobras.",
+        "A hug.",
+        "A long business meeting with no obvious purpose.",
+        "A man in a suit with perfect hair who tells you beautiful lies.",
+        "A man with the head of a goat and the body of a goat.",
+        "A massive collection of child pornography.",
+        "A medium horchata.",
+        "A negative body image that is totally justified.",
+        "A slowly encroaching circle of wolves.",
+        "A strong horse and enough rations for thirty days.",
+        "A terrified fat child who won't come out of the bushes.",
+        "A tiny fireman who puts out tiny fires.",
+        "A weird guy who says weird stuff and weirds me out.",
+        "A woman's right to choose.",
+        "A woman's perspective.",
+        "Aborting the shit out of a fetus.",
+        "Albert Einstein but if he had a huge muscles and a rhinoceros cock.",
+        "All these people I've killed.",
+        "An arrangement wherein I give a person money they have sex with me.",
+        "An empowered woman.",
+        "An incurable homosexual.",
+        "An old dog full of tumors.",
+        "An older man.",
+        "An X-Man whose power is that he has sex with dogs and children.",
+        "Anal.",
+        "Antidepressants.",
+        "Art.",
+        "Assassinating the president.",
+        "Awesome pictures of planets and stuff.",
+        "Bad emotions I don't want.",
+        "Becoming the President of the United States.",
+        "Being sexually attracted to children.",
+        "Being turned into sausages.",
+        "Beyonc&eacute;.",
+        "Big, smart money boys tap-tapping on their keyboards.",
+        "Blossoming into a beautiful young woman.",
+        "Breastfeeding in public like a radiant earth goddess.",
+        "Brunch.",
+        "Catching a live salmon in your mouth.",
+        "Child labor.",
+        "China.",
+        "Chipotle.",
+        "Chris Hemsworth.",
+        "Comprehensive immigration reform.",
+        "Condoleezza Rice.",
+        "Consensual, nonreproductive incest.",
+        "Content.",
+        "Crazy anal orgasms.",
+        "Creamy slices of real, California avocado.",
+        "Critical thinking.",
+        "Crushing the patriarchy.",
+        "Daddy going away forever.",
+        "Defeating a gorilla in single combat.",
+        "Denying the Holocaust.",
+        "Dis bitch.",
+        "Discovering that what I really want in life is to kill people and have sex with their corpses.",
+        "Doing a somersault and barfing.",
+        "Dominating a man by peeing on his eldest son.",
+        "Doritos and a Fruit Roll-Up.",
+        "Dropping dead in a Sbarro's bathroom and not being found for 72 hours.",
+        "Dumpster juice.",
+        "Eating ass.",
+        "Eating people.",
+        "Eating too many Cinnabons and then vomiting and then eating the vomit.",
+        "Ejaculating at the apex of a cartwheel.",
+        "Esmeralda, my most beautiful daughter.",
+        "Eternal screaming madness.",
+        "Every man's ultimate fantasy: a perfectly cylindrical vagina.",
+        "Everything.",
+        "Exploring each other's buttholes.",
+        "Facilitating dialogue and deconstructing binaries.",
+        "Falling into a pit of waffles.",
+        "Farting a huge shit out of my pussy.",
+        "Farting all over my face with your tight little asshole.",
+        "Feeling the emotion of anger.",
+        "Feminism.",
+        "Film roles for actresses over 40.",
+        "Finding a nice elevator to poop in.",
+        "Forty-five minutes of finger blasting.",
+        "Founding a major world religion.",
+        "Fucking me good and taking me to Red Lobster&reg;.",
+        "Fucking my therapist.",
+        "Gary.",
+        "Gay thoughts.",
+        "Gayle from HR.",
+        "Gazpacho.",
+        "Getting aborted.",
+        "Getting blasted in the face by a t-shirt cannon.",
+        "Getting eaten out by a dog.",
+        "Getting high with mom.",
+        "Getting killed and dragged up a tree by a leopard.",
+        "Getting laid like all the time.",
+        "Getting naked too soon.",
+        "Getting pegged.",
+        "Getting the Dorito crumbs out of my purse.",
+        "Getting this party started!",
+        "Getting trapped in a conversation about Ayn Rand.",
+        "Going around pulling people's tampons out.",
+        "Going to bed at a reasonable hour.",
+        "Gregor, my largest son.",
+        "Grunting for ten minutes and then peeing sand.",
+        "Guns.",
+        "Happy daddies with happy sandals.",
+        "Hating Jews.",
+        "Having a vagina.",
+        "Having an awesome time drinking and driving.",
+        "Having sex with a beautiful person.",
+        "Having sex with a man and then eating his head.",
+        "Having sex with your mom.",
+        "Holding the proper political beliefs of my time to attract a mate.",
+        "Homework.",
+        "Hot lettuce.",
+        "How good lead paint taste.",
+        "How great my ass looks in these jeans.",
+        "How sad it will be when Morgan Freeman dies.",
+        "How strange it is to be anything at all.",
+        "Huge big balls full of jizz.",
+        "Informing you that I am a registered sex offender.",
+        "ISIS.",
+        "It being too late to stop having sex with a horse.",
+        "Jason, the teen mayor.",
+        "Jazz.",
+        "Just now finding out about the Armenian Genocide.",
+        "Late-stage dementia.",
+        "Libertarians.",
+        "Loud, scary thunder.",
+        "Making out and stuff.",
+        "Math.",
+        "Meatloaf, the food.",
+        "Meatloaf, the man.",
+        "Menopause.",
+        "Mental illness.",
+        "Microaggressions.",
+        "Misogyny.",
+        "Mixing M&Ms and Skittles like some kind of psychopath.",
+        "Mommy and daddy fighting all the time.",
+        "Moon people.",
+        "Muchin' puss.",
+        "My brother's hot friends.",
+        "My dog dying.",
+        "My huge penis and substantial fortune.",
+        "Objectifying women.",
+        "One of them big-city Jew lawyers.",
+        "One of those \"blow jobs\" I've been hearing so much about.",
+        "Onions.",
+        "Opening your mouth to talk and a big penis fops out.",
+        "Our baby.",
+        "Out-of-control teenage blowjob parties.",
+        "Overthrowing the democratically-elected government of Chile.",
+        "Participating.",
+        "Period poops.",
+        "Picking up a glass of water and taking a sip and being the president.",
+        "Playing my asshole like a trumpet.",
+        "Plowing that ass like a New England corn farmer.",
+        "Political correctness.",
+        "Pooping in a leotard and hoping no one notices.",
+        "Pooping in the potty.",
+        "Prematurely ejaculating like a total loser.",
+        "Pretending to be one of the guys but actually being the spider god.",
+        "Putting more black people in jail.",
+        "Quacking like a duck in lieu of a cogent argument.",
+        "Quinoa.",
+        "Raising three kids on minimum wage.",
+        "Reaching an age where barbecue chips are better than sex.",
+        "Regurgitating a half-digested sparrow.",
+        "Restoring Germany to its former glory.",
+        "Rock-hard tits and a huge vagina.",
+        "Rolling so hard.",
+        "Rubbing my bush all over your bald head.",
+        "Salsa Night at Dave's Cantina.",
+        "Scissoring, if that's a thing.",
+        "Seizing control of the means of production.",
+        "Self-identifying as a DJ.",
+        "Showing all the boys my pussy.",
+        "Slamming a dunk.",
+        "Smashing my balls at the moment of climax.",
+        "Some of that good dick.",
+        "Some real spicy shrimps.",
+        "Starting a shitty podcast.",
+        "Straight blazin' 24/7.",
+        "Sucking each other's penises for hours on end.",
+        "Sudden and unwanted slam poetry.",
+        "Swearing praise upon the Sultan's hideous daughters.",
+        "Systems and policies designed to preserve centuries-old power structures.",
+        "Tables.",
+        "Taking the form of a falcon.",
+        "Tender chunks of all-white-meat chicken.",
+        "That bitch, Stacy.",
+        "The amount of baby carrots I can fit up my ass.",
+        "The best, deepest quotes from The Dark Knight.",
+        "The body of a 46-year-old man.",
+        "The bond between a woman and her horse.",
+        "The chicken from Popeyes&reg;.",
+        "The clown that followed me home from the grocery store.",
+        "The fear and hatred in men's hearts.",
+        "The feeling of going to McDonald's as a 6-year-old.",
+        "The flaming wreckage of the International Space Station.",
+        "The full blown marginalization of ugly people.",
+        "The full force of the American military.",
+        "The government.",
+        "The graceful path of an autumn leaf as it falls to its earthen cradle.",
+        "The hottest MILF in Dallas.",
+        "The LGBT community.",
+        "The lived experience of African Americans.",
+        "The mysterious fog rolling into town.",
+        "The ol' penis-in-the-popcorn surprise.",
+        "The Rwandan Genocide.",
+        "The secret to truly resilient hair.",
+        "The sweet, forbidden meat of the monkey.",
+        "The wind.",
+        "Thinking about what eating even is.",
+        "Three hours of nonstop penetration.",
+        "Tiny, rancid girl farts.",
+        "Trees.",
+        "Trevor, the world's greatest boyfriend.",
+        "Turning 32.",
+        "Twenty bucks.",
+        "Twenty cheerleaders laughing at your tiny penis.",
+        "Twisting my cock and balls into a balloon poodle.",
+        "Two beautiful pig sisters.",
+        "Two shitty kids and a garbage husband.",
+        "Waking up inside of a tornado.",
+        "Watching a hot person eat.",
+        "Watching you die.",
+        "Water.",
+        "When the big truck goes \"Toot! Toot!\"",
+        "Who really did 9/11.",
+        "Whomsoever let the dogs out.",
+        "Whooping your ass at Mario Kart.",
+        "Working so hard to have muscles and then having them.",
+        "You."
     ],
     "Base": {
         "name": "Base Set",
@@ -3078,13 +3618,5 @@
         ],
         "icon": 6
     },
-    "order": [
-        "Base",
-        "CAHe1",
-        "CAHe2",
-        "CAHe3",
-        "CAHe4",
-        "CAHe5",
-        "CAHe6"
-    ]
+    "order": ["Base", "CAHe1", "CAHe2", "CAHe3", "CAHe4", "CAHe5", "CAHe6"]
 }

@@ -1,5 +1,5 @@
 <template>
-<div class="cah-card"><span v-html="text"></span></div>
+<v-touch class="cah-card"><span v-html="text"></span></v-touch>
 </template>
 
 

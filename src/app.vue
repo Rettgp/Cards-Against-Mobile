@@ -57,6 +57,7 @@
           </f7-nav-left>
           <f7-nav-center sliding>{{ game_id }}</f7-link></f7-nav-center>
           <f7-nav-right>
+            <f7-link @click="PlayRando">RANDO</f7-link>
             <f7-link icon-f7="trash" @click="ClearPlayed"></f7-link>
           </f7-nav-right>
         </f7-navbar>
@@ -142,12 +143,33 @@ export default {
 
               while (deck_check.includes(potential_white_card))
               {
-                console.log(potential_white_card + " -- Has already been draw. Retry");
+                console.log(potential_white_card + " -- Has already been drawn. Retry");
                 potential_white_card = deck.DrawWhiteCard();
               }
               DB.ref(this.game_id).child("drawn_cards").push(potential_white_card);
               this.$refs.playerHand.UpdateHand(potential_white_card);
             });
+        },
+        PlayRando() {
+            let potential_white_card = deck.DrawWhiteCard();
+
+            let drawn_cards = DB.ref(this.game_id).child("drawn_cards").orderByKey();
+            drawn_cards.once("value", snapshot => {
+              let deck_check = [];
+              snapshot.forEach(function(childSnapshot) {
+                var child_data = childSnapshot.val();
+                deck_check.push(child_data);
+              });
+
+              while (deck_check.includes(potential_white_card))
+              {
+                console.log(potential_white_card + " -- Has already been drawn. Retry");
+                potential_white_card = deck.DrawWhiteCard();
+              }
+              DB.ref(this.game_id).child("drawn_cards").push(potential_white_card);
+              this.$refs.whiteCardsPlayed.UpdatePlayed("Rando Cardissian", potential_white_card);
+            });
+
         },
         PlayWhiteCard() {
             let card = this.$refs.playerHand.GetSelected();
