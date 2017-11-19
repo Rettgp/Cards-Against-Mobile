@@ -3,7 +3,7 @@
     <div class="player-container" v-for="player in played" :key="player.id">
             <WhiteCard v-bind:class="{ revealed: card.revealed }" v-for="(card, card_key) in player.cards" :key="card.id"
                 @click.native="Reveal( player, card, card_key, $event )"
-                :text="RevealedText(card)"
+                text=""
             />
     </div>
 </div>
@@ -23,7 +23,7 @@ export default {
     data: function() {
         return {
             played: [],
-            hiddenText: "",
+            selected: []
         };
     },
     props: {
@@ -51,11 +51,20 @@ export default {
             }
             this.$firebaseRefs.played.child(player).child("cards").push(cards_obj);
         },
-        RevealedText: function(card) {
-            return card.revealed ? card.text : this.hiddenText;
-        },
         Reveal(player, card, card_key, event) {
+            if ( !card.revealed ) {
+                this.selected.push(card.text);
+            } else {
+                var index = this.selected.indexOf(card.text);
+                this.selected.splice(index, 1);
+            }
             this.$firebaseRefs.played.child(player[".key"]).child("cards").child(card_key).child("revealed").set(!card.revealed);
+        },
+        GetSelected() {
+            if ( this.selected.length <= 0 ) {
+                return "";
+            }
+            return this.selected[this.selected.length - 1];
         },
         Clear() {
             this.cardId = 1;
@@ -78,23 +87,22 @@ export default {
 
 .player-container {
     display: block;
-    margin-bottom: -2.5em;
+    margin-bottom: -1em;
 }
 
-div[class=cah-card] {
+.cah-card {
     background-image: url("../assets/CAH-Card-Logo.svg");
     background-repeat: no-repeat;
     height: 2em; 
     width: 1em;
-    margin-right: -1.5em;
+    margin-right: -1.2em;
     white-space: nowrap;
 }
 
 div[class="cah-card revealed"] {
-    position: fixed;
-    top: 4em;
-    left: 50%;
-    /* transform: translateX(-9.5em); */
+    z-index: 200;
+    border: 1px solid #007aff;
+    transform: translateY(5%);
 }
 
 </style>

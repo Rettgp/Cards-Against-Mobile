@@ -6,11 +6,24 @@ Your custom styles go here
     font-weight: bold;
     font-family: "Helvetica Neue", "Helvetica"; 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
     border-radius: 15px;
     padding: 1em;
 }
 
 .toolbar-inner {
     padding: 0;
+}
+
+.revealed-card {
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.draggable { 
+    position: absolute;
 }

@@ -67,6 +67,7 @@
           <f7-page>
             <f7-page-content style="overflow: visible;">
               <black-card @click.native="DrawBlackCard" :game="game_id" :text="black_card.text" :pick="black_card.pick"/>
+              <white-card style="z-index: 500;" class="draggable" v-bind:class="{'revealed-card': IsSelected(), hidden: !IsSelected()}" :text="SelectedWhiteCard()"/>
               <played-cards :game="game_id" ref="whiteCardsPlayed"/>
               <player-hand ref="playerHand" :game="game_id" :name="name" />
             </f7-page-content>
@@ -80,22 +81,24 @@
 
 <script>
 import BlackCard from "./components/BlackCard.vue";
+import WhiteCard from "./components/WhiteCard.vue";
 import PlayerHand from "./components/PlayerHand.vue";
 import PlayedCards from "./components/PlayedCards.vue";
 import Scoreboard from "./components/Scoreboard.vue";
-import draggable from "vuedraggable";
 import Deck from "./Deck.js";
 import { DB } from "./Firebase.js";
 import firebase from "firebase";
+
+var Draggabilly = require("draggabilly");
 
 let deck = new Deck();
 export default {
     components: {
         BlackCard,
+        WhiteCard,
         PlayerHand,
         PlayedCards,
-        Scoreboard,
-        draggable
+        Scoreboard
     },
 
     data: function() {
@@ -183,6 +186,20 @@ export default {
         ClearPlayed() {
             this.$refs.whiteCardsPlayed.Clear();
         },
+        SelectedWhiteCard() {
+          if (this.game_id === "")
+          {
+            return "";
+          }
+          return this.$refs.whiteCardsPlayed.GetSelected();
+        },
+        IsSelected() {
+          if (this.game_id === "")
+          {
+            return false
+          }
+          return this.$refs.whiteCardsPlayed.GetSelected().length > 0;
+        },
         SignIn() {
           let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
           let new_game_id = '';
@@ -200,6 +217,11 @@ export default {
               this.DrawWhiteCard();
             }
           }
+
+          var elem = document.querySelector('.draggable');
+          var draggie = new Draggabilly( elem, {
+            // options...
+          });
         }
     }
 };

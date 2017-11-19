@@ -29,6 +29,7 @@
   "homepage": "http://cah-mobile.firebaseapp.com/",
   "dependencies": {
     "crypto": "^1.0.1",
+    "draggabilly": "^2.1.1",
     "dragula": "^3.7.2",
     "favicons-webpack-plugin": "0.0.7",
     "firebase": "^4.6.2",
@@ -41,6 +42,7 @@
     "request-promise": "^4.2.2",
     "resolve-url-loader": "^2.2.0",
     "vue": "^2.2.4",
+    "vue-draggabilly": "^1.1.0",
     "vuedraggable": "^2.15.0",
     "vuefire": "^1.4.4"
   },

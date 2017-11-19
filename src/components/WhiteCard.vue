@@ -1,11 +1,9 @@
 <template>
-<v-touch class="cah-card"><span v-html="text"></span></v-touch>
+<div class="cah-card"><span v-html="text"></span></div>
 </template>
 
 
 <script>
-import draggable from 'vuedraggable'
-
 export default {
     data: function() {
         return {
@@ -18,17 +16,14 @@ export default {
             required: true
         },
     },
-    components: {
-        draggable
-    }
 };
 
 </script>
 
 <style scoped>
 .cah-card {
-    width: 7em;
-    height: 11em;
+    height: 40%;
+    width: 44%;
     color: black;
     background-color: white;
     display: inline-flex;
@@ -37,7 +32,7 @@ export default {
 
 span {
     white-space: pre-wrap;
-    font-size: 0.95em;
+    font-size: 0.85em;
 }
 
 </style>

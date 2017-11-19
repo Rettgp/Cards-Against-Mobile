@@ -100,6 +100,7 @@ export default {
 
 .cah-card {
     font-size: 1.25em;
+    transition: 0.3s;
 }
 
 .hand-size {
