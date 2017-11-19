@@ -1,5 +1,8 @@
 <template>
-<div class="cah-card"><span v-html="blackCard.text"></span></div>
+<div class="cah-card">
+    <span v-html="blackCard.text"></span>
+    <span class="pick-text">PICK <span class="pick-num">{{blackCard.pick}}</span></span>
+</div>
 </template>
 
 
@@ -47,12 +50,34 @@ export default {
 </script>:
 
 <style scoped>
-div {
+.cah-card {
     height: 45%;
     width: 55%;
     color: white;
     background-color: black;
     float: left;
     vertical-align: top;
+    position: relative;
+    font-size: 1.25em;
+}
+.pick-text {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Helvetica"; 
+    font-size: 0.6em;
+}
+
+.pick-num {
+    display: inline-block;
+    border-radius: 30px; /* or 50% */
+
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 1.25em;
 }
 </style>

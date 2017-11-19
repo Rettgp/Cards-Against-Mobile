@@ -61,7 +61,7 @@ export default {
             this.$firebaseRefs.played.child(player[".key"]).child("cards").child(card_key).child("revealed").set(!card.revealed);
         },
         Clear() {
-            this.$firebaseRefs.remove();
+            this.$firebaseRefs.played.remove();
         }
     }
 };

@@ -52,13 +52,12 @@
         <!-- iOS Theme Navbar -->
         <f7-navbar v-if="$theme.ios">
           <f7-nav-left>
-            <f7-link icon-f7="card" @click="DrawWhiteCard"></f7-link>
+            <f7-link icon-f7="more" open-panel="left"></f7-link>
             <f7-link icon-f7="share" @click="PlayWhiteCard"></f7-link>
           </f7-nav-left>
-          <f7-nav-center sliding><f7-link open-panel="left">{{ game_id }}</f7-link></f7-nav-center>
+          <f7-nav-center sliding>{{ game_id }}</f7-link></f7-nav-center>
           <f7-nav-right>
             <f7-link icon-f7="trash" @click="ClearPlayed"></f7-link>
-            <f7-link icon-f7="card_fill" @click="DrawBlackCard"></f7-link>
           </f7-nav-right>
         </f7-navbar>
 
@@ -100,27 +99,55 @@ export default {
 
     data: function() {
         return {
-            black_card_drawn: false,
             black_card: { text: "", pick: 0 },
             game_id: "",
             name: ""
         };
     },
 
-    firebase: {
-        games: {
-            source: DB.ref("/")
-        }
-    },
-
     methods: {
         DrawBlackCard() {
-            this.black_card = deck.DrawBlackCard();
-            this.black_card_drawn = true;
+            let potential_black_card = deck.DrawBlackCard();
+            let drawn_cards = DB.ref(this.game_id).child("drawn_cards").orderByKey();
+            drawn_cards.once("value", snapshot => {
+              let deck_check = [];
+              snapshot.forEach(function(childSnapshot) {
+                var child_data = childSnapshot.val();
+                deck_check.push(child_data);
+              });
+
+              while (deck_check.includes(potential_black_card.text))
+              {
+                console.log(potential_black_card.text + " -- Has already been draw retry");
+                potential_black_card = deck.DrawBlackCard();
+              }
+              DB.ref(this.game_id).child("drawn_cards").push(potential_black_card.text);
+              this.black_card = potential_black_card;
+            });
         },
         DrawWhiteCard() {
-            let white_card = deck.DrawWhiteCard();
-            this.$refs.playerHand.UpdateHand(white_card);
+            if (this.$refs.playerHand.FullHand()) {
+              return;
+            }
+
+            let potential_white_card = deck.DrawWhiteCard();
+
+            let drawn_cards = DB.ref(this.game_id).child("drawn_cards").orderByKey();
+            drawn_cards.once("value", snapshot => {
+              let deck_check = [];
+              snapshot.forEach(function(childSnapshot) {
+                var child_data = childSnapshot.val();
+                deck_check.push(child_data);
+              });
+
+              while (deck_check.includes(potential_white_card))
+              {
+                console.log(potential_white_card + " -- Has already been draw. Retry");
+                potential_white_card = deck.DrawWhiteCard();
+              }
+              DB.ref(this.game_id).child("drawn_cards").push(potential_white_card);
+              this.$refs.playerHand.UpdateHand(potential_white_card);
+            });
         },
         PlayWhiteCard() {
             let card = this.$refs.playerHand.GetSelected();
@@ -129,6 +156,7 @@ export default {
             }
             this.$refs.whiteCardsPlayed.UpdatePlayed(this.name, card);
             this.$refs.playerHand.RemoveCard(card);
+            this.DrawWhiteCard();
         },
         ClearPlayed() {
             this.$refs.whiteCardsPlayed.Clear();
@@ -145,6 +173,10 @@ export default {
             this.game_id = this.game_id == "" ? new_game_id : this.game_id;
             DB.ref(this.game_id).child("timestamp").set(firebase.database.ServerValue.TIMESTAMP);
             this.$f7.closeModal(".login-screen", true);
+
+            for ( var i = 0; i < 10; i++ ) {
+              this.DrawWhiteCard();
+            }
           }
         }
     }

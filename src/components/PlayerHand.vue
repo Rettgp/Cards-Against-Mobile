@@ -4,6 +4,7 @@
         v-bind:class="{ selected: card.isSelected }" 
         @click.native="card.isSelected = !card.isSelected" 
         :text="card.text"/>
+    <span class="hand-size">{{hand.length}} / 10</span>
 </div>
 </template>
 
@@ -66,6 +67,9 @@ export default {
                     this.$firebaseRefs.hand.child(card_key).remove();
                 }
             };
+        },
+        FullHand() {
+            return this.hand.length >= 10;
         }
     }
 };
@@ -92,6 +96,13 @@ export default {
 
 .cah-card {
     font-size: 1.25em;
+}
+
+.hand-size {
+    position: fixed;
+    left: 0;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Helvetica"; 
 }
 
 </style>
