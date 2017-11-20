@@ -22,8 +22,7 @@ export default {
     },
     data: function() {
         return {
-            played: [],
-            selected: []
+            played: []
         };
     },
     props: {
@@ -39,7 +38,8 @@ export default {
     },
     firebase: {
         played: {
-            source: DB.ref(this.game + "/played")
+            source: DB.ref(this.game + "/played"),
+            asArray: true
         }
     },
     methods: {
@@ -52,19 +52,26 @@ export default {
             this.$firebaseRefs.played.child(player).child("cards").push(cards_obj);
         },
         Reveal(player, card, card_key, event) {
-            if ( !card.revealed ) {
-                this.selected.push(card.text);
-            } else {
-                var index = this.selected.indexOf(card.text);
-                this.selected.splice(index, 1);
-            }
             this.$firebaseRefs.played.child(player[".key"]).child("cards").child(card_key).child("revealed").set(!card.revealed);
         },
         GetSelected() {
-            if ( this.selected.length <= 0 ) {
+            let revealed_cards = [];
+            for (var i = 0; i < this.played.length; i++) {
+                let player = this.played[i];
+                for (var key in player.cards) {
+                    if (player.cards.hasOwnProperty(key)) {
+                        let card_data = player.cards[key];
+                        if ( card_data.revealed ) {
+                            revealed_cards.push(card_data.text);
+                        }
+                    }
+                }
+            }
+
+            if ( revealed_cards.length <= 0 ) {
                 return "";
             }
-            return this.selected[this.selected.length - 1];
+            return revealed_cards[revealed_cards.length - 1];
         },
         Clear() {
             this.cardId = 1;
