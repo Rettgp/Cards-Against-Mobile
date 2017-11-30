@@ -1,9 +1,9 @@
 <template>
 <div class="hand">
         <span class="hand-size">{{hand.length}} / 10</span>
-    <WhiteCard @swipeup="PlayCard" style="margin-top: 1em; height: 65%; width: 45%;" v-for="card in hand" :key="card.id"
-        v-bind:class="{ selected: card.isSelected }" 
-        @click.native="card.isSelected = !card.isSelected" 
+    <WhiteCard class="hand-card" @swipeup="PlayCard" v-for="card in hand" :key="card.id"
+        v-bind:class="{ selected: card.isSelected, draggable: card.isSelected }" 
+        @click.native="Select(card, $event)" 
         :text="card.text"/>
 </div>
 </template>
@@ -44,6 +44,12 @@ export default {
         }
     },
     methods: {
+        Select(card, event) {
+            let element = this.FindParent(event.target, "hand-card")
+            card.isSelected = !card.isSelected;
+            let selected = card.isSelected;
+            this.$emit("selected", {element, selected});
+        },
         UpdateHand(white_card) {
             this.$firebaseRefs.hand.push({ id: ++cardId, text: white_card, isSelected: false });
         },
@@ -74,7 +80,18 @@ export default {
         },
         FullHand() {
             return this.hand.length >= 10;
-        }
+        },
+        FindParent(element, class_name) {
+          var node = element.parentNode;
+          while (node != null) {
+              if (typeof node.classList !== "undefined" && 
+                node.classList.contains(class_name)) {
+                  return node;
+              }
+              node = node.parentNode;
+          }
+          return element;
+        },
     }
 };
 
@@ -98,7 +115,8 @@ export default {
     transform: translateY(-9%);
 }
 
-.cah-card {
+.hand-card {
+    margin-top: 1em; height: 65%; width: 45%;
     font-size: 1.25em;
     transition: 0.3s;
 }

@@ -67,9 +67,9 @@
           <f7-page>
             <f7-page-content style="overflow: visible;">
               <black-card @click.native="DrawBlackCard" :game="game_id" :text="black_card.text" :pick="black_card.pick"/>
-              <white-card style="z-index: 500;" class="draggable" v-bind:class="{'revealed-card': IsSelected(), hidden: !IsSelected()}" :text="SelectedWhiteCard()"/>
-              <played-cards :game="game_id" ref="whiteCardsPlayed"/>
-              <player-hand ref="playerHand" :game="game_id" :name="name" />
+              <white-card style="z-index: 500;" class="draggable played-display-card" v-bind:class="{hidden: !IsSelected()}" :text="SelectedWhiteCard()"/>
+              <played-cards id="played-container" :game="game_id" ref="whiteCardsPlayed"/>
+              <player-hand @selected="HandCardSelected($event)" id="hand-container" ref="playerHand" :game="game_id" :name="name" />
             </f7-page-content>
           </f7-page>
 
@@ -90,8 +90,12 @@ import { DB } from "./Firebase.js";
 import firebase from "firebase";
 
 var Draggabilly = require("draggabilly");
+let touch_src_left = 0;
+let touch_src_height = 0;
+let touch_src_width = 0;
 
 let deck = new Deck();
+let draggies = []
 export default {
     components: {
         BlackCard,
@@ -189,7 +193,7 @@ export default {
         SelectedWhiteCard() {
           if (this.game_id === "")
           {
-            return "";
+            return "Cards Against Mobile";
           }
           return this.$refs.whiteCardsPlayed.GetSelected();
         },
@@ -199,6 +203,20 @@ export default {
             return false
           }
           return this.$refs.whiteCardsPlayed.GetSelected().length > 0;
+        },
+        HandCardSelected(event) {
+          console.log(event);
+          if ( event.selected ) {
+            this.AddDraggie(event.element);
+          } else {
+            for (var i = 0; i < draggies.length; i++) {
+              if (draggies[i].element == event.element) {
+                draggies[i].destroy();
+                draggies.splice(i);
+              }
+            }
+          }
+          console.log(draggies);
         },
         SignIn() {
           let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -218,10 +236,78 @@ export default {
             }
           }
 
-          var elem = document.querySelector('.draggable');
-          var draggie = new Draggabilly( elem, {
+          var draggableElems = document.querySelectorAll('.draggable');
+          for ( var i=0, len = draggableElems.length; i < len; i++ ) {
+            var draggableElem = draggableElems[i];
+            this.AddDraggie(draggableElem);
+          }
+        },
+
+        FindParent(element, class_name) {
+          var node = element.parentNode;
+          while (node != null) {
+              if (typeof node.classList !== "undefined" && 
+                node.classList.contains(class_name)) {
+                  return node;
+              }
+              node = node.parentNode;
+          }
+          return element;
+        },
+        AddDraggie(element) {
+          let vm = this;
+          var draggie = new Draggabilly( element, {
             // options...
           });
+
+          draggie.on( 'dragMove', function( event, pointer ) {
+            let src = vm.FindParent(event.srcElement, "cah-card");
+            $("#played-container").css("background-color", "transparent");
+            var targ_elem = document.elementFromPoint(pointer.clientX, pointer.clientY);
+            if (document.getElementById("played-container").contains(targ_elem) && 
+                src.classList.contains("hand-card")) {
+              $("#played-container").css("background-color", "rgba(0, 122, 255, 0.3)");
+            }
+          });
+          draggie.on( 'pointerUp', function( event, pointer ) {
+            let src = vm.FindParent(event.srcElement, "cah-card");
+            var targ_elem = document.elementFromPoint(pointer.clientX, pointer.clientY);
+            if (document.getElementById("played-container").contains(targ_elem) && 
+                src.classList.contains("hand-card")) {
+              vm.PlayWhiteCard();
+              $("#played-container").css("background-color", "transparent");
+            }
+          });
+          draggie.on( "dragEnd", function( event, pointer ) {
+            let src = vm.FindParent(event.srcElement, "hand-card");
+            if (!src.classList.contains("hand-card")) {
+              return;
+            }
+            src.style.left = "";
+            src.style.top = "";
+          });
+          draggie.on( 'pointerDown', function( event, pointer ) {
+            let src = vm.FindParent(event.srcElement, "cah-card");
+            let style = window.getComputedStyle(src, null);
+            touch_src_left = src.getBoundingClientRect().left;
+            touch_src_height = style.getPropertyValue("height");
+            touch_src_width = style.getPropertyValue("width");
+          });
+          draggie.on( 'dragStart', function( event, pointer ) {
+            let src = vm.FindParent(event.srcElement, "cah-card");
+            let left = touch_src_left;
+            let top = 0;
+            let element = src;
+            do {
+                top += element.offsetTop  || 0;
+                element = element.parentNode;
+            } while(element && element.className != "page");
+            src.style.left = touch_src_left + "px";
+            src.style.top = top + "px";
+            src.style.height = touch_src_height;
+            src.style.width = touch_src_width;
+          });
+          draggies.push( draggie );
         }
     }
 };
