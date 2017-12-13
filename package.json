@@ -39,6 +39,7 @@
     "framework7-icons": "^0.8.9",
     "framework7-vue": "^0.9.2",
     "jquery": "3.2.1",
+    "packery": "^2.1.1",
     "request-promise": "^4.2.2",
     "resolve-url-loader": "^2.2.0",
     "vue": "^2.2.4",
