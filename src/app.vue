@@ -53,7 +53,6 @@
         <f7-navbar v-if="$theme.ios">
           <f7-nav-left>
             <f7-link icon-f7="more" open-panel="left"></f7-link>
-            <f7-link icon-f7="share" @click="PlayWhiteCard"></f7-link>
           </f7-nav-left>
           <f7-nav-center sliding>{{ game_id }}</f7-link></f7-nav-center>
           <f7-nav-right>
@@ -205,7 +204,6 @@ export default {
           return this.$refs.whiteCardsPlayed.GetSelected().length > 0;
         },
         HandCardSelected(event) {
-          console.log(event);
           if ( event.selected ) {
             this.AddDraggie(event.element);
           } else {
@@ -213,10 +211,10 @@ export default {
               if (draggies[i].element == event.element) {
                 draggies[i].destroy();
                 draggies.splice(i);
+                console.log(draggies);
               }
             }
           }
-          console.log(draggies);
         },
         SignIn() {
           let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';

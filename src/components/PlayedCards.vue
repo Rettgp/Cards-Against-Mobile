@@ -13,6 +13,7 @@
 <script>
 let cardId = 1;
 let playerId = 1;
+let previousLength = 0;
 
 import {DB} from "../Firebase.js";
 import WhiteCard from "./WhiteCard.vue";
@@ -22,7 +23,8 @@ export default {
     },
     data: function() {
         return {
-            played: []
+            played: [],
+            randomPlayed: []
         };
     },
     props: {
@@ -34,6 +36,26 @@ export default {
     watch: {
         game: function (newVal) {
             this.$bindAsArray('played', DB.ref(this.game + "/played"))
+        },
+        played: function (newVal) {
+            if (newVal.length === 0 || newVal.length === previousLength) {
+                return;
+            }
+            var currentIndex = this.played.length, temporaryValue, randomIndex;
+
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                // And swap it with the current element.
+                temporaryValue = this.played[currentIndex];
+                this.played[currentIndex] = this.played[randomIndex];
+                this.played[randomIndex] = temporaryValue;
+            }
+            previousLength = newVal.length;
         }
     },
     firebase: {
