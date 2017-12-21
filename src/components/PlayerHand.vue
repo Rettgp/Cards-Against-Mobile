@@ -48,6 +48,7 @@ export default {
             let element = this.FindParent(event.target, "hand-card")
             card.isSelected = !card.isSelected;
             let selected = card.isSelected;
+            console.log(element)
             this.$emit("selected", {element, selected});
         },
         UpdateHand(white_card) {

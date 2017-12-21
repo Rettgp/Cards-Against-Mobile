@@ -206,12 +206,14 @@ export default {
         HandCardSelected(event) {
           if ( event.selected ) {
             this.AddDraggie(event.element);
+            console.log(draggies);
           } else {
             for (var i = 0; i < draggies.length; i++) {
               if (draggies[i].element == event.element) {
                 draggies[i].destroy();
-                draggies.splice(i);
+                draggies.splice(i, 1);
                 console.log(draggies);
+                return;
               }
             }
           }
@@ -273,6 +275,13 @@ export default {
             if (document.getElementById("played-container").contains(targ_elem) && 
                 src.classList.contains("hand-card")) {
               vm.PlayWhiteCard();
+              for (var i = 0; i < draggies.length; i++) {
+                if (draggies[i].element == src) {
+                  draggies[i].destroy();
+                  draggies.splice(i);
+                  console.log(draggies);
+                }
+              }
               $("#played-container").css("background-color", "transparent");
             }
           });
